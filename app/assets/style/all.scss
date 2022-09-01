@@ -3,5 +3,12 @@
 @import "./helpers/utilities";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Paytone+One&family=Squada+One&display=swap');
 
+@import "./base/base";
+@import "./helpers/mixin";
+
+@import "./components/button";
+
+@import "./layout/header";
 @import './pages/index'

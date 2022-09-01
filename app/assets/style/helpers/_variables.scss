@@ -61,20 +61,23 @@ $colors: (
   "teal":       $teal,
   "cyan":       $cyan,
   "white":      $white,
+  "black":      $black,
   "gray":       $gray-600,
   "gray-dark":  $gray-800
 ) !default;
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       #00cc99; // $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       #E6553B; // $blue !default;
+$secondary:     #53C139 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-900 !default;
+$light:         #F0F0F0 !default;
+$dark:          #808080 !default;
+$black:         $black;
+$white:         $white;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -86,7 +89,9 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "black":       $black,
+  "white":       $white,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -214,7 +219,7 @@ $escaped-characters: (
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-caret:                true !default;
-$enable-rounded:              true !default;
+$enable-rounded:              false !default;
 $enable-shadows:              false !default;
 $enable-gradients:            false !default;
 $enable-transitions:          true !default;
@@ -252,9 +257,38 @@ $spacers: (
   0: 0,
   1: $spacer * .25,
   2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  3: $spacer * .75,
+  4: $spacer,
+  5: $spacer * 1.25,
+  6: $spacer * 1.5,
+  7: $spacer * 1.75,
+  8: $spacer * 2,
+  9: $spacer * 2.25,
+  10: $spacer * 2.5,
+  11: $spacer * 2.75,
+  12: $spacer * 3,
+  13: $spacer * 3.25,
+  14: $spacer * 3.5,
+  15: $spacer * 3.75,
+  16: $spacer * 4,
+  17: $spacer * 4.25,
+  18: $spacer * 4.5,
+  19: $spacer * 4.75,
+  20: $spacer * 5,
+  21: $spacer * 5.25,
+  22: $spacer * 5.5,
+  23: $spacer * 5.75,
+  24: $spacer * 6,
+  25: $spacer * 6.25,
+  26: $spacer * 6.5,
+  27: $spacer * 6.75,
+  28: $spacer * 7,
+  32: $spacer * 8,
+  34: $spacer * 8.5,
+  36: $spacer * 9,
+  40: $spacer * 10,
+  50: $spacer * 12.5,
+  60: $spacer * 15,
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -267,6 +301,7 @@ $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) 
 // scss-docs-start position-map
 $position-values: (
   0: 0,
+  25: 25%,
   50: 50%,
   100: 100%
 ) !default;
@@ -298,7 +333,7 @@ $stretched-link-z-index:                  1 !default;
 //
 // Style p element.
 
-$paragraph-margin-bottom:   1rem !default;
+$paragraph-margin-bottom:   0 ; //1rem !default;
 
 
 // Grid breakpoints
@@ -367,7 +402,7 @@ $border-widths: (
   5: 5px
 ) !default;
 
-$border-color:                $gray-300 !default;
+$border-color:                $black !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
@@ -416,8 +451,8 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-sans-serif:      'Noto Sans TC', 'Squada One', 'Paytone One', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace:       'Squada One', 'Paytone One', 'Noto Sans TC', SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$variable-prefix}font-sans-serif) !default;
 $font-family-code:            var(--#{$variable-prefix}font-monospace) !default;
@@ -441,12 +476,12 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+$h1-font-size:                $font-size-base * 3 !default; //48
+$h2-font-size:                $font-size-base * 2 !default; //32
+$h3-font-size:                $font-size-base * 1.5 !default; //24
+$h4-font-size:                $font-size-base * 1.25 !default; //20
+$h5-font-size:                $font-size-base * 1.125 !default; //18
+$h6-font-size:                $font-size-base !default; //16
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -471,11 +506,11 @@ $headings-color:              null !default;
 
 // scss-docs-start display-headings
 $display-font-sizes: (
-  1: 5rem,
+  1: 5rem, //80
   2: 4.5rem,
-  3: 4rem,
+  3: 4rem, //64
   4: 3.5rem,
-  5: 3rem,
+  5: 3rem, //48
   6: 2.5rem
 ) !default;
 
@@ -1086,7 +1121,7 @@ $card-spacer-x:                     $spacer !default;
 $card-title-spacer-y:               $spacer * .5 !default;
 $card-border-width:                 $border-width !default;
 $card-border-radius:                $border-radius !default;
-$card-border-color:                 rgba($black, .125) !default;
+$card-border-color:                 $black; //rgba($black, .125) !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y * .5 !default;
 $card-cap-padding-x:                $card-spacer-x !default;

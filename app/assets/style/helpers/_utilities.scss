@@ -8,6 +8,7 @@ $utilities: map-merge(
   (
     // scss-docs-start utils-vertical-align
     "align": (
+      responsive: true,
       property: vertical-align,
       class: align,
       values: baseline top middle bottom text-bottom text-top
@@ -26,6 +27,7 @@ $utilities: map-merge(
     // scss-docs-end utils-float
     // scss-docs-start utils-overflow
     "overflow": (
+      responsive: true,
       property: overflow,
       values: auto hidden visible scroll,
     ),
@@ -53,23 +55,28 @@ $utilities: map-merge(
     // scss-docs-end utils-shadow
     // scss-docs-start utils-position
     "position": (
+      responsive: true,
       property: position,
       values: static relative absolute fixed sticky
     ),
     "top": (
+      responsive: true,
       property: top,
       values: $position-values
     ),
     "bottom": (
+      responsive: true,
       property: bottom,
       values: $position-values
     ),
     "start": (
+      responsive: true,
       property: left,
       class: start,
       values: $position-values
     ),
     "end": (
+      responsive: true,
       property: right,
       class: end,
       values: $position-values
@@ -86,6 +93,7 @@ $utilities: map-merge(
     // scss-docs-end utils-position
     // scss-docs-start utils-borders
     "border": (
+      responsive: true,
       property: border,
       values: (
         null: $border-width solid $border-color,
@@ -93,6 +101,7 @@ $utilities: map-merge(
       )
     ),
     "border-top": (
+      responsive: true,
       property: border-top,
       values: (
         null: $border-width solid $border-color,
@@ -100,6 +109,7 @@ $utilities: map-merge(
       )
     ),
     "border-end": (
+      responsive: true,
       property: border-right,
       class: border-end,
       values: (
@@ -108,6 +118,7 @@ $utilities: map-merge(
       )
     ),
     "border-bottom": (
+      responsive: true,
       property: border-bottom,
       values: (
         null: $border-width solid $border-color,
@@ -115,6 +126,7 @@ $utilities: map-merge(
       )
     ),
     "border-start": (
+      responsive: true,
       property: border-left,
       class: border-start,
       values: (
@@ -123,11 +135,13 @@ $utilities: map-merge(
       )
     ),
     "border-color": (
+      responsive: true,
       property: border-color,
       class: border,
       values: map-merge($theme-colors, ("white": $white))
     ),
     "border-width": (
+      responsive: true,
       property: border-width,
       class: border,
       values: $border-widths
@@ -136,6 +150,7 @@ $utilities: map-merge(
     // Sizing utilities
     // scss-docs-start utils-sizing
     "width": (
+      responsive: true,
       property: width,
       class: w,
       values: (
@@ -147,6 +162,7 @@ $utilities: map-merge(
       )
     ),
     "max-width": (
+      responsive: true,
       property: max-width,
       class: mw,
       values: (100: 100%)
@@ -162,6 +178,7 @@ $utilities: map-merge(
       values: (100: 100vw)
     ),
     "height": (
+      responsive: true,
       property: height,
       class: h,
       values: (
@@ -454,6 +471,7 @@ $utilities: map-merge(
       )
     ),
     "line-height": (
+      responsive: true,
       property: line-height,
       class: lh,
       values: (
@@ -546,6 +564,7 @@ $utilities: map-merge(
     // scss-docs-end utils-interaction
     // scss-docs-start utils-border-radius
     "rounded": (
+      responsive: true,
       property: border-radius,
       class: rounded,
       values: (
@@ -581,6 +600,7 @@ $utilities: map-merge(
     // scss-docs-end utils-border-radius
     // scss-docs-start utils-visibility
     "visibility": (
+      responsive: true,
       property: visibility,
       class: null,
       values: (

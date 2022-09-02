@@ -1,0 +1,35 @@
+.navbar{
+    &-brand-logo{
+        background-image: url(../images/logo.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include logo-link;
+        height: 18px;
+        width: 85px;
+        @include pc{
+            height: 40px;
+            width: 190px;
+        }
+    }
+    &-toggler-logo{
+        width: 21px;
+        height: 18px;
+        &:focus{
+            box-shadow: none;
+        }
+    }
+    &-searchBox{
+        @include pc-lg{
+            width: 288px !important;
+        }
+        &:focus-visible{
+            outline: none;
+        }
+    }
+}
+
+.fa-bars-logo, .fa-xmark-logo{
+    font-size: 21px;
+    line-height: 1;
+}
+

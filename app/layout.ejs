@@ -1,22 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%- title %></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="./assets/style/all.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    <%- title %>
+  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
 
-  <body>
+<body>
 
-    
+  <header>
 
-    <%- contents %>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-4 py-lg-0 border-bottom">
+      <div class="container">
 
-    <footer class="footer">
+        <div class="d-flex align-items-center w-100">
+
+          <!-- logo -->
+          <h1 class="mb-0 flex-grow-1">
+            <a class="navbar-brand navbar-brand-logo" href="#">ART NFT</a>
+          </h1>
+
+          <!-- previous -->
+          <a class="navbar-previous lh-1 fs-5 text-black navbar-previous me-auto d-none" href="#"><i
+              class="fa-solid fa-angle-left"></i></a>
+
+          <div class="d-flex justify-content-end py-lg-10 px-lg-12 w-100 w-lg-auto border-start-lg">
+            <!-- search box -->
+            <input
+              class="navbar-searchBox bg-transparent border-0 fs-7 fs-lg-6 lh-1 lh-lg-base w-100 p-0 mx-4 mx-lg-0 d-none d-lg-block"
+              type="text" placeholder="搜尋作品名稱、藝術家名稱">
+            <!-- magnifying-glass pc -->
+            <a class="lh-1 text-black navbar-glass-pc d-none d-lg-block hover-text-primary" href="#"><i
+                class="fa-solid fa-magnifying-glass fs-5 fs-lg-3 ms-lg-6"></i></a>
+            <!-- magnifying-glass mobile -->
+            <a class="lh-1 text-black navbar-glass-mobile d-lg-none hover-text-primary" href="#"><i
+                class="fa-solid fa-magnifying-glass fs-5 fs-lg-3 ms-lg-6"></i></a>
+            <!-- ham button -->
+            <button class="navbar-toggler navbar-toggler-logo border-0 p-0 lh-1 ms-6" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa-solid fa-bars fa-bars-logo"></i>
+              <i class="fa-solid fa-xmark fa-xmark-logo d-none"></i>
+            </button>
+          </div>
+
+
+        </div>
+        <!-- pc menu -->
+        <ul class="list-unstyled mb-0 d-none d-lg-flex align-items-center me-xl-n12">
+          <li><a class="text-black border-start text-nowrap px-12 py-10 hover-text-primary" href="#">探索</a></li>
+          <li><a class="text-black border-start text-nowrap px-12 py-10 hover-text-primary" href="#">市值</a></li>
+          <li><a class="text-black border-start px-12 py-10 lh-1 hover-text-primary" href="#"><i
+                class="fa-solid fa-wallet fs-3"></i></a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+    <!-- 摺疊切換內容 -->
+    <div class="collapse navbar-collapse border-bottom" id="navbarToggler">
+      <div class="container">
+        <ul class="navbar-nav mb-0">
+          <li class="nav-item d-flex justify-content-center border-bottom">
+            <a class="nav-link fs-5 fw-bold text-black p-6" href="#">探索</a>
+          </li>
+          <li class="nav-item d-flex justify-content-center">
+            <a class="nav-link fs-5 fw-bold text-black p-6" href="#">市值</a>
+          </li>
+        </ul>
+        <button class="btn btn-primary border fs-5 text-white w-100 py-3 mb-6" type="submit">連結錢包</button>
+      </div>
+    </div>
+
+  </header>
+
+
+  <%- contents %>
+
+    <footer>
 
     </footer>
 
@@ -24,10 +93,12 @@
 
 
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+      async></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
-  </body>
+</body>
 
 </html>

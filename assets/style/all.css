@@ -28193,6 +28193,8 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 body {
@@ -28236,6 +28238,37 @@ body {
   color: #E6553B !important;
 }
 
+.deco-border-footer::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: #000;
+  top: -12px;
+}
+
+.squada-one {
+  font-family: 'Squada One';
+}
+
+.w-c-135 {
+  width: 135px;
+}
+
+.w-c-52 {
+  width: 52px;
+}
+
+.v-lr {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+}
+
+.lh-c-52 {
+  line-height: 52px;
+}
+
 .navbar-brand-logo {
   background-image: url(../images/logo.svg);
   background-size: cover;
@@ -28277,6 +28310,34 @@ body {
 .fa-bars-logo, .fa-xmark-logo {
   font-size: 21px;
   line-height: 1;
+}
+
+.index-banner-img {
+  width: 100% !important;
+  height: 372px !important;
+}
+
+@media (min-width: 992px) {
+  .index-banner-img {
+    height: 340px !important;
+  }
+}
+
+.index-banner-card {
+  border: none;
+  border-bottom: 2px solid #000;
+}
+
+@media (min-width: 992px) {
+  .index-banner-card {
+    border: 1px solid #000 !important;
+  }
+  .index-banner-card-top {
+    margin-bottom: -1px;
+  }
+  .index-banner-card-left {
+    margin-right: -1px;
+  }
 }
 
 /*# sourceMappingURL=all.css.map */

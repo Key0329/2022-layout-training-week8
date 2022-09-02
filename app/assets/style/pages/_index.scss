@@ -1,0 +1,25 @@
+.index {
+    &-banner {
+        &-img {
+            width: 100% !important;
+            height: 372px !important;
+            @include pc {
+                height: 340px !important;
+            }
+        }
+
+        &-card {
+            border: none;
+            border-bottom: 2px solid #000;
+            @include pc {
+                border: 1px solid #000 !important;
+                &-top {
+                    margin-bottom: -1px;
+                }
+                &-left {
+                    margin-right: -1px;
+                }
+            }
+        }
+    }
+}

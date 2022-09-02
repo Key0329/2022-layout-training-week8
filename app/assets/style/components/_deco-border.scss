@@ -1,0 +1,10 @@
+.deco-border-footer{
+    &::before{
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background: #000;
+        top: -12px;
+    }
+}

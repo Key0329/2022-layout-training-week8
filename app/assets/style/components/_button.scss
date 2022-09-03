@@ -7,7 +7,7 @@
         right: 0;
         bottom: 0;
         border-left: 16px transparent solid;
-        border-bottom: 16px #E6553B solid;
+        border-bottom: 16px $primary solid;
     }
     &:hover::after {
         border-bottom: 16px black solid;
@@ -17,16 +17,21 @@
 // 白色按鈕
 .btn-white {
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid black !important;
     &:hover {
-        background-color: #E6553B;
+        background-color: $primary;
         color: white;
     }
 }
 
 
-.btn-border:hover {
-    background-color: #E6553B;
+.btn-bg-primary:hover {
+    background-color: $primary;
     color: white;
     border: 1px solid black;
+}
+
+.btn-border-transparent{
+    border: 1px solid transparent;
+    margin-bottom: -1px;
 }

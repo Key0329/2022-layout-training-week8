@@ -80,33 +80,15 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 h1, .h1 {
-  font-size: calc(1.425rem + 2.1vw);
-}
-
-@media (min-width: 1200px) {
-  h1, .h1 {
-    font-size: 3rem;
-  }
+  font-size: 3rem;
 }
 
 h2, .h2 {
-  font-size: calc(1.325rem + 0.9vw);
-}
-
-@media (min-width: 1200px) {
-  h2, .h2 {
-    font-size: 2rem;
-  }
+  font-size: 2rem;
 }
 
 h3, .h3 {
-  font-size: calc(1.275rem + 0.3vw);
-}
-
-@media (min-width: 1200px) {
-  h3, .h3 {
-    font-size: 1.5rem;
-  }
+  font-size: 1.5rem;
 }
 
 h4, .h4 {
@@ -380,14 +362,8 @@ legend {
   width: 100%;
   padding: 0;
   margin-bottom: 0.5rem;
-  font-size: calc(1.275rem + 0.3vw);
+  font-size: 1.5rem;
   line-height: inherit;
-}
-
-@media (min-width: 1200px) {
-  legend {
-    font-size: 1.5rem;
-  }
 }
 
 legend + * {
@@ -465,75 +441,39 @@ progress {
 }
 
 .display-1 {
-  font-size: calc(1.625rem + 4.5vw);
+  font-size: 5rem;
   font-weight: 300;
   line-height: 1.2;
-}
-
-@media (min-width: 1200px) {
-  .display-1 {
-    font-size: 5rem;
-  }
 }
 
 .display-2 {
-  font-size: calc(1.575rem + 3.9vw);
+  font-size: 4.5rem;
   font-weight: 300;
   line-height: 1.2;
-}
-
-@media (min-width: 1200px) {
-  .display-2 {
-    font-size: 4.5rem;
-  }
 }
 
 .display-3 {
-  font-size: calc(1.525rem + 3.3vw);
+  font-size: 4rem;
   font-weight: 300;
   line-height: 1.2;
-}
-
-@media (min-width: 1200px) {
-  .display-3 {
-    font-size: 4rem;
-  }
 }
 
 .display-4 {
-  font-size: calc(1.475rem + 2.7vw);
+  font-size: 3.5rem;
   font-weight: 300;
   line-height: 1.2;
-}
-
-@media (min-width: 1200px) {
-  .display-4 {
-    font-size: 3.5rem;
-  }
 }
 
 .display-5 {
-  font-size: calc(1.425rem + 2.1vw);
+  font-size: 3rem;
   font-weight: 300;
   line-height: 1.2;
-}
-
-@media (min-width: 1200px) {
-  .display-5 {
-    font-size: 3rem;
-  }
 }
 
 .display-6 {
-  font-size: calc(1.375rem + 1.5vw);
+  font-size: 2.5rem;
   font-weight: 300;
   line-height: 1.2;
-}
-
-@media (min-width: 1200px) {
-  .display-6 {
-    font-size: 2.5rem;
-  }
 }
 
 .list-unstyled {
@@ -12599,15 +12539,15 @@ fieldset:disabled .btn {
 }
 
 .fs-1 {
-  font-size: calc(1.425rem + 2.1vw) !important;
+  font-size: 3rem !important;
 }
 
 .fs-2 {
-  font-size: calc(1.325rem + 0.9vw) !important;
+  font-size: 2rem !important;
 }
 
 .fs-3 {
-  font-size: calc(1.275rem + 0.3vw) !important;
+  font-size: 1.5rem !important;
 }
 
 .fs-4 {
@@ -15886,13 +15826,13 @@ fieldset:disabled .btn {
     padding-left: 15rem !important;
   }
   .fs-sm-1 {
-    font-size: calc(1.425rem + 2.1vw) !important;
+    font-size: 3rem !important;
   }
   .fs-sm-2 {
-    font-size: calc(1.325rem + 0.9vw) !important;
+    font-size: 2rem !important;
   }
   .fs-sm-3 {
-    font-size: calc(1.275rem + 0.3vw) !important;
+    font-size: 1.5rem !important;
   }
   .fs-sm-4 {
     font-size: 1.25rem !important;
@@ -18924,13 +18864,13 @@ fieldset:disabled .btn {
     padding-left: 15rem !important;
   }
   .fs-md-1 {
-    font-size: calc(1.425rem + 2.1vw) !important;
+    font-size: 3rem !important;
   }
   .fs-md-2 {
-    font-size: calc(1.325rem + 0.9vw) !important;
+    font-size: 2rem !important;
   }
   .fs-md-3 {
-    font-size: calc(1.275rem + 0.3vw) !important;
+    font-size: 1.5rem !important;
   }
   .fs-md-4 {
     font-size: 1.25rem !important;
@@ -21962,13 +21902,13 @@ fieldset:disabled .btn {
     padding-left: 15rem !important;
   }
   .fs-lg-1 {
-    font-size: calc(1.425rem + 2.1vw) !important;
+    font-size: 3rem !important;
   }
   .fs-lg-2 {
-    font-size: calc(1.325rem + 0.9vw) !important;
+    font-size: 2rem !important;
   }
   .fs-lg-3 {
-    font-size: calc(1.275rem + 0.3vw) !important;
+    font-size: 1.5rem !important;
   }
   .fs-lg-4 {
     font-size: 1.25rem !important;
@@ -25000,13 +24940,13 @@ fieldset:disabled .btn {
     padding-left: 15rem !important;
   }
   .fs-xl-1 {
-    font-size: calc(1.425rem + 2.1vw) !important;
+    font-size: 3rem !important;
   }
   .fs-xl-2 {
-    font-size: calc(1.325rem + 0.9vw) !important;
+    font-size: 2rem !important;
   }
   .fs-xl-3 {
-    font-size: calc(1.275rem + 0.3vw) !important;
+    font-size: 1.5rem !important;
   }
   .fs-xl-4 {
     font-size: 1.25rem !important;
@@ -28038,13 +27978,13 @@ fieldset:disabled .btn {
     padding-left: 15rem !important;
   }
   .fs-xxl-1 {
-    font-size: calc(1.425rem + 2.1vw) !important;
+    font-size: 3rem !important;
   }
   .fs-xxl-2 {
-    font-size: calc(1.325rem + 0.9vw) !important;
+    font-size: 2rem !important;
   }
   .fs-xxl-3 {
-    font-size: calc(1.275rem + 0.3vw) !important;
+    font-size: 1.5rem !important;
   }
   .fs-xxl-4 {
     font-size: 1.25rem !important;
@@ -28105,45 +28045,6 @@ fieldset:disabled .btn {
   }
   .xxl-invisible {
     visibility: hidden !important;
-  }
-}
-
-@media (min-width: 1200px) {
-  .fs-1 {
-    font-size: 3rem !important;
-  }
-  .fs-2 {
-    font-size: 2rem !important;
-  }
-  .fs-3 {
-    font-size: 1.5rem !important;
-  }
-  .fs-sm-1 {
-    font-size: 3rem !important;
-  }
-  .fs-sm-2 {
-    font-size: 2rem !important;
-  }
-  .fs-sm-3 {
-    font-size: 1.5rem !important;
-  }
-  .fs-md-1 {
-    font-size: 3rem !important;
-  }
-  .fs-md-2 {
-    font-size: 2rem !important;
-  }
-  .fs-md-3 {
-    font-size: 1.5rem !important;
-  }
-  .fs-lg-1 {
-    font-size: 3rem !important;
-  }
-  .fs-lg-2 {
-    font-size: 2rem !important;
-  }
-  .fs-lg-3 {
-    font-size: 1.5rem !important;
   }
 }
 
@@ -28220,7 +28121,7 @@ body {
 
 .btn-white {
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid black !important;
 }
 
 .btn-white:hover {
@@ -28228,10 +28129,15 @@ body {
   color: white;
 }
 
-.btn-border:hover {
+.btn-bg-primary:hover {
   background-color: #E6553B;
   color: white;
   border: 1px solid black;
+}
+
+.btn-border-transparent {
+  border: 1px solid transparent;
+  margin-bottom: -1px;
 }
 
 .hover-text-primary:hover {
@@ -28249,6 +28155,10 @@ body {
 
 .squada-one {
   font-family: 'Squada One';
+}
+
+.paytone-one {
+  font-family: 'Paytone One';
 }
 
 .w-c-135 {
@@ -28338,6 +28248,277 @@ body {
   .index-banner-card-left {
     margin-right: -1px;
   }
+}
+
+.index-ranking-img {
+  width: 87px;
+  height: 91px;
+  margin-top: -1px;
+  margin-bottom: -1px;
+}
+
+.index-ranking-img img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 992px) {
+  .index-ranking-img img {
+    -o-object-position: top;
+       object-position: top;
+  }
+}
+
+@media (min-width: 992px) {
+  .index-ranking-img-expand {
+    width: 100% !important;
+    height: 374px !important;
+    border: none !important;
+    border-bottom: 1px solid #000 !important;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.index-ranking-number {
+  width: 38px;
+}
+
+@media (min-width: 992px) {
+  .index-ranking-number {
+    width: 54px;
+  }
+}
+
+.index-ranking-number-expand {
+  margin-right: -1px;
+  margin-bottom: -1px;
+}
+
+@media (min-width: 992px) {
+  .index-ranking-number-expand {
+    z-index: 10;
+    width: 64px;
+  }
+}
+
+.index-ranking-card {
+  position: relative;
+}
+
+.index-ranking-card:hover .index-ranking-img {
+  position: relative;
+}
+
+.index-ranking-card:hover .index-ranking-img::before {
+  content: 'MORE';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.7;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 3;
+  font-family: "Squada One";
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.index-ranking-card:hover .index-ranking-img::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-left: 16px transparent solid;
+  border-bottom: 16px #E6553B solid;
+  z-index: 5;
+}
+
+.index-ranking-card:hover .index-ranking-img-expand::before {
+  opacity: 0.5;
+}
+
+@media (min-width: 992px) {
+  .index-ranking-card:hover .index-ranking-img-expand::before {
+    content: "";
+  }
+}
+
+@media (min-width: 992px) {
+  .index-ranking-card:hover .index-ranking-img-expand::after {
+    border-bottom: 16px #000 solid;
+  }
+}
+
+@media (min-width: 992px) {
+  .index-ranking-card:hover .index-ranking-card-body {
+    position: relative;
+  }
+  .index-ranking-card:hover .index-ranking-card-body::after {
+    position: absolute;
+    content: "MORE";
+    right: 0;
+    top: -35px;
+    width: 132px;
+    height: 35px;
+    border: 1px solid #000;
+    margin-bottom: -1px;
+    margin-right: -1px;
+    background: #E6553B;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: "Squada One";
+    color: white;
+    z-index: 4;
+  }
+}
+
+.index-artist-name {
+  left: 24px;
+  top: 24px;
+}
+
+@media (min-width: 992px) {
+  .index-artist-name {
+    font-size: 80px;
+  }
+}
+
+@media (min-width: 992px) {
+  .index-artist-content {
+    background-color: rgba(255, 255, 255, 0.85) !important;
+    width: 307px;
+    left: 24px;
+    bottom: 24px;
+  }
+}
+
+.index-artist-button {
+  right: 8px;
+  bottom: 8px;
+}
+
+@media (min-width: 992px) {
+  .index-artist-button {
+    right: 24px;
+    bottom: 24px;
+  }
+}
+
+.swiper {
+  height: 352px;
+}
+
+@media (min-width: 475px) {
+  .swiper {
+    height: 328px;
+  }
+}
+
+@media (min-width: 767px) {
+  .swiper {
+    height: 396px;
+  }
+}
+
+@media (min-width: 992px) {
+  .swiper {
+    height: 439px;
+  }
+}
+
+@media (min-width: 992px) {
+  .swiper-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.swiper-slide {
+  width: 100% !important;
+  height: 238px;
+}
+
+@media (min-width: 767px) {
+  .swiper-slide {
+    height: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  .swiper-slide {
+    width: 306px !important;
+    height: 262px;
+  }
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .swiper-slide-active {
+    width: 636px !important;
+    height: 439px;
+  }
+}
+
+.swiper-slide-active .index-artist-content, .swiper-slide-active .index-artist-button, .swiper-slide-active .index-artist-name {
+  display: block !important;
+}
+
+.swiper-pagination {
+  position: unset;
+  width: auto !important;
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: black;
+  opacity: 1;
+  border-radius: 0%;
+}
+
+.swiper-pagination-bullet-active {
+  width: 16px;
+  background: #dc3545;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.swiper-slide-next,
+.swiper-slide-prev {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-filter: gray;
+          filter: gray;
 }
 
 /*# sourceMappingURL=all.css.map */

@@ -15846,6 +15846,21 @@ fieldset:disabled .btn {
   .fs-sm-7 {
     font-size: 0.875rem !important;
   }
+  .fw-sm-light {
+    font-weight: 300 !important;
+  }
+  .fw-sm-lighter {
+    font-weight: lighter !important;
+  }
+  .fw-sm-normal {
+    font-weight: 400 !important;
+  }
+  .fw-sm-bold {
+    font-weight: 700 !important;
+  }
+  .fw-sm-bolder {
+    font-weight: bolder !important;
+  }
   .lh-sm-1 {
     line-height: 1 !important;
   }
@@ -18883,6 +18898,21 @@ fieldset:disabled .btn {
   }
   .fs-md-7 {
     font-size: 0.875rem !important;
+  }
+  .fw-md-light {
+    font-weight: 300 !important;
+  }
+  .fw-md-lighter {
+    font-weight: lighter !important;
+  }
+  .fw-md-normal {
+    font-weight: 400 !important;
+  }
+  .fw-md-bold {
+    font-weight: 700 !important;
+  }
+  .fw-md-bolder {
+    font-weight: bolder !important;
   }
   .lh-md-1 {
     line-height: 1 !important;
@@ -21922,6 +21952,21 @@ fieldset:disabled .btn {
   .fs-lg-7 {
     font-size: 0.875rem !important;
   }
+  .fw-lg-light {
+    font-weight: 300 !important;
+  }
+  .fw-lg-lighter {
+    font-weight: lighter !important;
+  }
+  .fw-lg-normal {
+    font-weight: 400 !important;
+  }
+  .fw-lg-bold {
+    font-weight: 700 !important;
+  }
+  .fw-lg-bolder {
+    font-weight: bolder !important;
+  }
   .lh-lg-1 {
     line-height: 1 !important;
   }
@@ -24959,6 +25004,21 @@ fieldset:disabled .btn {
   }
   .fs-xl-7 {
     font-size: 0.875rem !important;
+  }
+  .fw-xl-light {
+    font-weight: 300 !important;
+  }
+  .fw-xl-lighter {
+    font-weight: lighter !important;
+  }
+  .fw-xl-normal {
+    font-weight: 400 !important;
+  }
+  .fw-xl-bold {
+    font-weight: 700 !important;
+  }
+  .fw-xl-bolder {
+    font-weight: bolder !important;
   }
   .lh-xl-1 {
     line-height: 1 !important;
@@ -27998,6 +28058,21 @@ fieldset:disabled .btn {
   .fs-xxl-7 {
     font-size: 0.875rem !important;
   }
+  .fw-xxl-light {
+    font-weight: 300 !important;
+  }
+  .fw-xxl-lighter {
+    font-weight: lighter !important;
+  }
+  .fw-xxl-normal {
+    font-weight: 400 !important;
+  }
+  .fw-xxl-bold {
+    font-weight: 700 !important;
+  }
+  .fw-xxl-bolder {
+    font-weight: bolder !important;
+  }
   .lh-xxl-1 {
     line-height: 1 !important;
   }
@@ -28153,6 +28228,22 @@ body {
   top: -12px;
 }
 
+.deco-border-joinUs::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: #000;
+  left: 0;
+  top: 68px;
+}
+
+@media (min-width: 992px) {
+  .deco-border-joinUs::after {
+    top: 78px;
+  }
+}
+
 .squada-one {
   font-family: 'Squada One';
 }
@@ -28177,6 +28268,10 @@ body {
 
 .lh-c-52 {
   line-height: 52px;
+}
+
+.fs-c-40 {
+  font-size: 40px;
 }
 
 .navbar-brand-logo {
@@ -28421,6 +28516,112 @@ body {
     right: 24px;
     bottom: 24px;
   }
+}
+
+@media (min-width: 767px) {
+  .index-artwork-card {
+    border-bottom: 1px solid #000 !important;
+  }
+}
+
+.index-artwork-img {
+  width: 100%;
+}
+
+.index-artwork-img-container {
+  position: relative;
+}
+
+.index-artwork-img-container:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.index-artwork-img-container:hover .index-artwork-img-hover-content {
+  visibility: visible;
+}
+
+.index-artwork-img-hover-content {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  visibility: hidden;
+}
+
+.index-artwork-img-1 {
+  height: 139px;
+}
+
+@media (min-width: 767px) {
+  .index-artwork-img-1 {
+    height: 254px;
+  }
+}
+
+.index-artwork-img-2 {
+  height: 151px;
+}
+
+@media (min-width: 767px) {
+  .index-artwork-img-2 {
+    height: 327px;
+  }
+}
+
+.index-artwork-img-3 {
+  height: 93px;
+}
+
+@media (min-width: 767px) {
+  .index-artwork-img-3 {
+    height: 254px;
+  }
+}
+
+.index-artwork-img-4 {
+  height: 173px;
+}
+
+@media (min-width: 767px) {
+  .index-artwork-img-4 {
+    height: 169px;
+  }
+}
+
+.index-artwork-img-5 {
+  height: 192px;
+}
+
+@media (min-width: 767px) {
+  .index-artwork-img-5 {
+    height: 174px;
+  }
+}
+
+.index-artwork-img-6 {
+  height: 99px;
+}
+
+@media (min-width: 767px) {
+  .index-artwork-img-6 {
+    height: 254px;
+  }
+}
+
+.index-artwork-img-7 {
+  height: 395px;
+}
+
+.index-artwork-img-8 {
+  height: 254px;
 }
 
 .swiper {

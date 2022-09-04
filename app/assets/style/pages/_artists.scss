@@ -1,0 +1,54 @@
+.artists{
+    &-intro-card-body{
+        margin-left: -1px;
+    }
+
+    .nav{
+        border-color: black;
+    }
+    .nav-link.active{
+        color: black !important;
+        background: transparent;
+        border-color: black;
+        border-bottom-color: $light !important;
+    }
+
+    &-artWorks{
+        &-img{
+            height: 313px;
+            @include pc{
+                height: 270px;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            &-container{
+                width: 100%;
+                z-index: 2;
+                top: 148px; //129+240+1+48-270
+            }
+        }
+    } 
+
+}
+
+.tab-triangle{
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        border-top: 24px solid #000;
+        border-right: 24px solid transparent;
+        top: 0;
+        left: 0;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        border-top: 24px solid #000;
+        border-left: 24px solid transparent;
+        top: 0;
+        right: 0;
+    }
+}

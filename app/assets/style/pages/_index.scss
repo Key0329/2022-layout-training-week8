@@ -262,10 +262,16 @@
                 }
             }
             &-7{
-                height: 395px;
+                height: 139px;
+                @include pad{
+                    height: 395px;
+                }
             }
             &-8{
-                height: 254px;
+                height: 185px;
+                @include pad{
+                    height: 254px;
+                }
             }
         }
     }

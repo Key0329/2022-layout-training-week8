@@ -8,3 +8,18 @@
         top: -12px;
     }
 }
+
+.deco-border-joinUs{
+    &::after{
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background: #000;
+        left: 0;
+        top: 68px;
+        @include pc{
+            top: 78px;
+        }
+    }
+}

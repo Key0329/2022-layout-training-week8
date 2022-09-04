@@ -8936,6 +8936,10 @@ fieldset:disabled .btn {
   border-width: 5px !important;
 }
 
+.border-10 {
+  border-width: 10px !important;
+}
+
 .w-25 {
   width: 25% !important;
 }
@@ -13071,6 +13075,9 @@ fieldset:disabled .btn {
   .border-sm-5 {
     border-width: 5px !important;
   }
+  .border-sm-10 {
+    border-width: 10px !important;
+  }
   .w-sm-25 {
     width: 25% !important;
   }
@@ -16123,6 +16130,9 @@ fieldset:disabled .btn {
   }
   .border-md-5 {
     border-width: 5px !important;
+  }
+  .border-md-10 {
+    border-width: 10px !important;
   }
   .w-md-25 {
     width: 25% !important;
@@ -19177,6 +19187,9 @@ fieldset:disabled .btn {
   .border-lg-5 {
     border-width: 5px !important;
   }
+  .border-lg-10 {
+    border-width: 10px !important;
+  }
   .w-lg-25 {
     width: 25% !important;
   }
@@ -22230,6 +22243,9 @@ fieldset:disabled .btn {
   .border-xl-5 {
     border-width: 5px !important;
   }
+  .border-xl-10 {
+    border-width: 10px !important;
+  }
   .w-xl-25 {
     width: 25% !important;
   }
@@ -25282,6 +25298,9 @@ fieldset:disabled .btn {
   }
   .border-xxl-5 {
     border-width: 5px !important;
+  }
+  .border-xxl-10 {
+    border-width: 10px !important;
   }
   .w-xxl-25 {
     width: 25% !important;
@@ -28617,11 +28636,23 @@ body {
 }
 
 .index-artwork-img-7 {
-  height: 395px;
+  height: 139px;
+}
+
+@media (min-width: 767px) {
+  .index-artwork-img-7 {
+    height: 395px;
+  }
 }
 
 .index-artwork-img-8 {
-  height: 254px;
+  height: 185px;
+}
+
+@media (min-width: 767px) {
+  .index-artwork-img-8 {
+    height: 254px;
+  }
 }
 
 .swiper {
@@ -28720,6 +28751,64 @@ body {
           filter: grayscale(100%);
   -webkit-filter: gray;
           filter: gray;
+}
+
+.artists-intro-card-body {
+  margin-left: -1px;
+}
+
+.artists .nav {
+  border-color: black;
+}
+
+.artists .nav-link.active {
+  color: black !important;
+  background: transparent;
+  border-color: black;
+  border-bottom-color: #F0F0F0 !important;
+}
+
+.artists-artWorks-img {
+  height: 313px;
+}
+
+@media (min-width: 992px) {
+  .artists-artWorks-img {
+    height: 270px;
+  }
+}
+
+.artists-artWorks-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.artists-artWorks-img-container {
+  width: 100%;
+  z-index: 2;
+  top: 148px;
+}
+
+.tab-triangle {
+  position: relative;
+}
+
+.tab-triangle::before {
+  content: "";
+  position: absolute;
+  border-top: 24px solid #000;
+  border-right: 24px solid transparent;
+  top: 0;
+  left: 0;
+}
+
+.tab-triangle::after {
+  content: "";
+  position: absolute;
+  border-top: 24px solid #000;
+  border-left: 24px solid transparent;
+  top: 0;
+  right: 0;
 }
 
 /*# sourceMappingURL=all.css.map */

@@ -1,0 +1,134 @@
+.arts{
+    &-sidebar{
+        &-form{
+            &-select{
+                width: 65%;
+                background-position: right 0.5rem center;
+                background-size: 8px;
+            }
+            &-input{
+                width: 100% !important;
+                height: 42px !important;
+            }
+        }
+        
+    }
+    &-content{
+        &-img{
+            &-artist{
+                width: 32px;
+                height: 32px;
+            }
+        }
+        &-borderDeco{
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                height: 50px;
+                width: 1px;
+                background: #fff;
+                right: -1px;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 1;
+            }
+        }
+    }
+    // arts masonry
+    &-masonry{
+        &-card{
+            @include pad{
+                border-bottom: 1px solid #000 !important;
+            }
+        }
+        &-img{
+            width: 100%;
+            &-container{
+                position: relative;
+                &:hover{
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        background: rgba(0, 0, 0, 0.7);
+                        z-index: 1;
+                    }
+                    .arts-masonry-img-hover-content{
+                        visibility: visible;
+                    }
+                }
+            }
+            &-hover-content{
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: 2;
+                visibility: hidden;
+            }
+
+
+            &-1{
+                height: 139px;
+                @include pad{
+                    height: 254px;
+                }
+            }
+            &-2{
+                height: 151px;
+                @include pad{
+                    height: 327px;
+                }
+            }
+            &-3{
+                height: 93px;
+                @include pad{
+                    height: 254px;
+                }
+            }
+            &-4{
+                height: 173px;
+                @include pad{
+                    height:254px;
+                }
+            }
+            &-5{
+                height: 192px;
+                @include pad{
+                    height: 368px;
+                }
+            }
+            &-6{
+                height: 99px;
+                @include pad{
+                    height: 395px;
+                }
+            }
+            &-7{
+                height: 139px;
+                @include pad{
+                    height: 395px;
+                }
+            }
+            &-8{
+                height: 185px;
+                @include pad{
+                    height: 254px;
+                }
+            }
+        }
+    }
+    // mobile button
+    &-mobile-button{
+        z-index: 3;
+        bottom: 24px;
+    }
+    &-modal-btn-close{
+        right: 12px;
+        top: 24px;
+    }
+}

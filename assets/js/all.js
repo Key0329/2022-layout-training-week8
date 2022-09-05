@@ -1,11 +1,11 @@
 "use strict";
 
 $(document).ready(function () {
+  // ------------------ index ------------------
   // navbar ham menu
   $(".navbar-toggler-logo").click(function (e) {
     event.preventDefault();
-    $(".fa-bars-logo").toggleClass("d-none");
-    $(".fa-xmark-logo").toggleClass("d-none");
+    $(".fa-bars-logo, .fa-xmark-logo").toggleClass("d-none");
   }); // navbar magnifying search
 
   $(".navbar-glass-mobile").click(function (e) {
@@ -33,6 +33,12 @@ $(document).ready(function () {
         spaceBetween: 24
       }
     }
+  }); // ------------------ arts ------------------
+  // collapse arrow
+
+  $(".arts-sidebar-btn").click(function (e) {
+    event.preventDefault();
+    $(this).find(".fa-angle-up, .fa-angle-down").toggleClass("d-none");
   });
 });
 //# sourceMappingURL=all.js.map

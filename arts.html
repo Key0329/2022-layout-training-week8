@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    ART NFT - Arts
+  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body class="bg-light">
+
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-light py-4 py-lg-0 border-bottom">
+      <div class="container">
+
+        <div class="d-flex align-items-center w-100">
+
+          <!-- logo -->
+          <h1 class="mb-0 flex-grow-1">
+            <a class="navbar-brand navbar-brand-logo" href="#">ART NFT</a>
+          </h1>
+
+          <!-- previous -->
+          <a class="navbar-previous lh-1 fs-5 text-black navbar-previous me-auto d-none" href="#"><i
+              class="fa-solid fa-angle-left"></i></a>
+
+          <div class="d-flex justify-content-end py-lg-10 px-lg-12 w-100 w-lg-auto border-start-lg">
+            <!-- search box -->
+            <input
+              class="navbar-searchBox bg-transparent border-0 fs-7 fs-lg-6 lh-1 lh-lg-base w-100 p-0 mx-4 mx-lg-0 d-none d-lg-block"
+              type="text" placeholder="搜尋作品名稱、藝術家名稱">
+            <!-- magnifying-glass pc -->
+            <a class="lh-1 text-black navbar-glass-pc d-none d-lg-block hover-text-primary" href="#"><i
+                class="fa-solid fa-magnifying-glass fs-5 fs-lg-3 ms-lg-6"></i></a>
+            <!-- magnifying-glass mobile -->
+            <a class="lh-1 text-black navbar-glass-mobile d-lg-none hover-text-primary" href="#"><i
+                class="fa-solid fa-magnifying-glass fs-5 fs-lg-3 ms-lg-6"></i></a>
+            <!-- ham button -->
+            <button class="navbar-toggler navbar-toggler-logo border-0 p-0 lh-1 ms-6 hover-text-primary" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa-solid fa-bars fa-bars-logo"></i>
+              <i class="fa-solid fa-xmark fa-xmark-logo d-none"></i>
+            </button>
+          </div>
+
+
+        </div>
+        <!-- pc menu -->
+        <ul class="list-unstyled mb-0 d-none d-lg-flex align-items-center">
+          <li><a class="text-black fw-bold border-start text-nowrap px-12 py-10 hover-text-primary" href="#">探索</a></li>
+          <li><a class="text-black fw-bold border-start text-nowrap px-12 py-10 hover-text-primary" href="#">市值</a></li>
+          <li><a class="text-black border-start ps-12 py-10 lh-1 hover-text-primary" href="#"><i
+                class="fa-solid fa-wallet fs-3"></i></a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+    <!-- 摺疊切換內容 -->
+    <div class="collapse navbar-collapse border-bottom" id="navbarToggler">
+      <div class="container">
+        <ul class="navbar-nav mb-0">
+          <li class="nav-item d-flex justify-content-center border-bottom">
+            <a class="nav-link fs-5 fw-bold text-black text-center hover-text-primary w-100 p-6" href="#">探索</a>
+          </li>
+          <li class="nav-item d-flex justify-content-center">
+            <a class="nav-link fs-5 fw-bold text-black text-center hover-text-primary w-100 p-6" href="#">市值</a>
+          </li>
+        </ul>
+        <button class="btn btn-primary border fs-5 text-white w-100 py-3 mb-6" type="submit">連結錢包</button>
+      </div>
+    </div>
+
+  </header>
+
+
+  
+<main class="arts pt-6 pt-lg-10 pb-12 pb-lg-22">
+    <div class="container">
+
+        <div class="row">
+
+            <!-- sidebar -->
+            <aside class="col-lg-3 d-none d-lg-block">
+                <div class="border bg-white d-lg-block">
+                    <!-- internet -->
+                    <div class="border-bottom p-6">
+                        <a class="btn arts-sidebar-btn d-flex justify-content-between align-items-center text-black p-0"
+                            href="#arts-sidebar-collapse-internet" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="arts-sidebar-collapse-internet">
+                            <p class="fw-bold mb-0">網路</p>
+                            <i class="fa-solid fa-angle-up"></i>
+                            <i class="fa-solid fa-angle-down d-none"></i>
+                        </a>
+                        <ul class="collapse p-0 mb-0 show" id="arts-sidebar-collapse-internet">
+                            <li class="form-check d-flex justify-content-between p-0 my-2">
+                                <label class="form-check-label" for="arts-sidebar-checkbox-eth">以太坊</label>
+                                <input type="checkbox" class="form-check-input" id="arts-sidebar-checkbox-eth">
+                            </li>
+                            <li class="form-check d-flex justify-content-between p-0">
+                                <label class="form-check-label" for="arts-sidebar-checkbox-bnb">BNB 智能鏈</label>
+                                <input type="checkbox" class="form-check-input" id="arts-sidebar-checkbox-bnb" checked>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- status -->
+                    <div class="border-bottom p-6">
+                        <a class="btn arts-sidebar-btn d-flex justify-content-between align-items-center text-black p-0"
+                            href="#arts-sidebar-collapse-status" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="arts-sidebar-collapse-status">
+                            <p class="fw-bold mb-0">狀態</p>
+                            <i class="fa-solid fa-angle-up"></i>
+                            <i class="fa-solid fa-angle-down d-none"></i>
+                        </a>
+                        <ul class="collapse p-0 mb-0 show" id="arts-sidebar-collapse-status">
+                            <li class="form-check d-flex justify-content-between p-0 my-2">
+                                <label class="form-check-label" for="arts-sidebar-checkbox-displayOnly">僅展示</label>
+                                <input type="checkbox" class="form-check-input" id="arts-sidebar-checkbox-displayOnly">
+                            </li>
+                            <li class="form-check d-flex justify-content-between p-0">
+                                <label class="form-check-label" for="arts-sidebar-checkbox-onSale">拍賣中</label>
+                                <input type="checkbox" class="form-check-input" id="arts-sidebar-checkbox-onSale"
+                                    checked>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- price -->
+                    <div class="border-bottom p-6">
+                        <a class="btn arts-sidebar-btn d-flex justify-content-between align-items-center text-black p-0"
+                            href="#arts-sidebar-collapse-price" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="arts-sidebar-collapse-price">
+                            <p class="fw-bold mb-0">價格</p>
+                            <i class="fa-solid fa-angle-up"></i>
+                            <i class="fa-solid fa-angle-down d-none"></i>
+                        </a>
+                        <div class="collapse show mt-4" id="arts-sidebar-collapse-price">
+                            <form class="d-xxl-flex align-items-center justify-content-between gap-2">
+                                <select class="form-select arts-sidebar-form-select px-2 py-2">
+                                    <option selected>ETH</option>
+                                    <option>BNB</option>
+                                    <option>AVAX</option>
+                                    <option>SOL</option>
+                                </select>
+                                <div class="d-flex align-items-center gap-2">
+                                    <input type="text" class="arts-sidebar-form-input">
+                                    <p class="mb-0">－</p>
+                                    <input type="text" class="arts-sidebar-form-input">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- attribute -->
+                    <div class="border-bottom p-6">
+                        <p class="fw-bold text-dark mb-6">屬性</p>
+                        <!-- breed -->
+                        <div class="mb-6">
+                            <a class="btn arts-sidebar-btn d-flex justify-content-between align-items-center text-black p-0"
+                                href="#arts-sidebar-collapse-attri-breed" data-bs-toggle="collapse" role="button"
+                                aria-expanded="false" aria-controls="arts-sidebar-collapse-attri-breed">
+                                <p class="fw-bold mb-0">品種</p>
+                                <i class="fa-solid fa-angle-up"></i>
+                                <i class="fa-solid fa-angle-down d-none"></i>
+                            </a>
+                            <ul class="collapse show p-0 mb-0" id="arts-sidebar-collapse-attri-breed">
+                                <li class="form-check d-flex justify-content-between p-0 my-2">
+                                    <label class="form-check-label" for="arts-sidebar-checkbox-eightBro">八哥</label>
+                                    <input type="checkbox" class="form-check-input" id="arts-sidebar-checkbox-eightBro">
+                                </li>
+                                <li class="form-check d-flex justify-content-between p-0 mb-2">
+                                    <label class="form-check-label" for="arts-sidebar-checkbox-tigerParrot">虎皮鸚鵡</label>
+                                    <input type="checkbox" class="form-check-input"
+                                        id="arts-sidebar-checkbox-tigerParrot" checked>
+                                </li>
+                                <li class="form-check d-flex justify-content-between p-0 mb-2">
+                                    <label class="form-check-label"
+                                        for="arts-sidebar-checkbox-BohemianWaxwing">太平鳥</label>
+                                    <input type="checkbox" class="form-check-input"
+                                        id="arts-sidebar-checkbox-BohemianWaxwing">
+                                </li>
+                                <li class="form-check d-flex justify-content-between p-0">
+                                    <label class="form-check-label"
+                                        for="arts-sidebar-checkbox-GarrulaxCanorus">畫眉鳥</label>
+                                    <input type="checkbox" class="form-check-input"
+                                        id="arts-sidebar-checkbox-GarrulaxCanorus">
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- quantity -->
+                        <div class="mb-6">
+                            <a class="btn arts-sidebar-btn d-flex justify-content-between align-items-center text-black p-0"
+                                href="#arts-sidebar-collapse-attri-quantity" data-bs-toggle="collapse" role="button"
+                                aria-expanded="false" aria-controls="arts-sidebar-collapse-attri-quantity">
+                                <p class="fw-bold mb-0">鳥的數量</p>
+                                <i class="fa-solid fa-angle-up d-none"></i>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul class="collapse p-0 mb-0" id="arts-sidebar-collapse-attri-quantity">
+                                <li class="form-check d-flex justify-content-between p-0 my-2">
+                                    <label class="form-check-label" for="arts-sidebar-checkbox-1">1</label>
+                                    <input type="checkbox" class="form-check-input" id="arts-sidebar-checkbox-1">
+                                </li>
+                                <li class="form-check d-flex justify-content-between p-0 mb-2">
+                                    <label class="form-check-label" for="arts-sidebar-checkbox-2">2</label>
+                                    <input type="checkbox" class="form-check-input" id="arts-sidebar-checkbox-2"
+                                        checked>
+                                </li>
+                                <li class="form-check d-flex justify-content-between p-0 mb-2">
+                                    <label class="form-check-label" for="arts-sidebar-checkbox-3">3</label>
+                                    <input type="checkbox" class="form-check-input" id="arts-sidebar-checkbox-3">
+                                </li>
+                                <li class="form-check d-flex justify-content-between p-0">
+                                    <label class="form-check-label" for="arts-sidebar-checkbox-4">4</label>
+                                    <input type="checkbox" class="form-check-input" id="arts-sidebar-checkbox-4">
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- flower or weed -->
+                        <div class="mb-6">
+                            <a class="btn arts-sidebar-btn d-flex justify-content-between align-items-center text-black p-0"
+                                href="#arts-sidebar-collapse-attri-flowers" data-bs-toggle="collapse" role="button"
+                                aria-expanded="false" aria-controls="arts-sidebar-collapse-attri-flowers">
+                                <p class="fw-bold mb-0">是否有花草</p>
+                                <i class="fa-solid fa-angle-up d-none"></i>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul class="collapse p-0 mb-0" id="arts-sidebar-collapse-attri-flowers">
+                                <li class="form-check d-flex justify-content-between p-0 my-2">
+                                    <label class="form-check-label" for="arts-sidebar-checkbox-true">有</label>
+                                    <input type="checkbox" class="form-check-input" id="arts-sidebar-checkbox-true">
+                                </li>
+                                <li class="form-check d-flex justify-content-between p-0 mb-2">
+                                    <label class="form-check-label" for="arts-sidebar-checkbox-false">沒有</label>
+                                    <input type="checkbox" class="form-check-input" id="arts-sidebar-checkbox-false"
+                                        checked>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- bird color -->
+                        <div class="mb-6">
+                            <a class="btn arts-sidebar-btn d-flex justify-content-between align-items-center text-black p-0"
+                                href="#arts-sidebar-collapse-attri-birdColor" data-bs-toggle="collapse" role="button"
+                                aria-expanded="false" aria-controls="arts-sidebar-collapse-attri-birdColor">
+                                <p class="fw-bold mb-0">鳥的顏色</p>
+                                <i class="fa-solid fa-angle-up d-none"></i>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul class="collapse p-0 mb-0" id="arts-sidebar-collapse-attri-birdColor">
+                                <li class="form-check d-flex justify-content-between p-0 my-2">
+                                    <label class="form-check-label" for="arts-sidebar-checkbox-white">白色</label>
+                                    <input type="checkbox" class="form-check-input" id="arts-sidebar-checkbox-white">
+                                </li>
+                                <li class="form-check d-flex justify-content-between p-0 mb-2">
+                                    <label class="form-check-label" for="arts-sidebar-checkbox-black">黑色</label>
+                                    <input type="checkbox" class="form-check-input" id="arts-sidebar-checkbox-black"
+                                        checked>
+                                </li>
+                                <li class="form-check d-flex justify-content-between p-0 mb-2">
+                                    <label class="form-check-label" for="arts-sidebar-checkbox-blue">藍色</label>
+                                    <input type="checkbox" class="form-check-input" id="arts-sidebar-checkbox-blue">
+                                </li>
+                                <li class="form-check d-flex justify-content-between p-0 mb-2">
+                                    <label class="form-check-label" for="arts-sidebar-checkbox-others">其他</label>
+                                    <input type="checkbox" class="form-check-input" id="arts-sidebar-checkbox-others">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- mobile select button -->
+            <div class="arts-mobile-button d-flex justify-content-center position-fixed d-lg-none">
+                <button class="btn btn-black py-2 px-12 w-auto" type="button" data-bs-toggle="modal"
+                    data-bs-target="#art-mobile-modal">篩選條件<span class="squada-one lh-1 ms-1">2</span></button>
+            </div>
+
+            <!-- arts content -->
+            <div class="col-lg-9">
+                <div class="row mb-10">
+                    <!-- outside bird -->
+                    <div class="col-xl-7">
+                        <div class="d-flex mb-1">
+                            <div>
+                                <img class="arts-content-img-artist rounded-circle me-4"
+                                    src="./assets/images/artist01.jpg" alt="artist01">
+                            </div>
+                            <p class="squada-one lh-1">Michael</p>
+                        </div>
+                        <h2 class="fw-bold mb-2">我家外面的鳥</h2>
+                        <p class="mb-4 mb-xl-0">家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
+                    </div>
+                    <!-- item detail -->
+                    <div class="col-xl-5 mt-auto">
+                        <ul class="list-unstyled row row-cols-4 g-0 mb-0">
+                            <li class="col">
+                                <div class="arts-content-borderDeco bg-white border border-end-0 text-center px-2 py-4">
+                                    <p class="fs-7 fs-lg-6 mb-1 mb-lg-2">項目</p>
+                                    <p class="squada-one fs-4 fs-lg-3 ">6.4 k</p>
+                                </div>
+                            </li>
+                            <li class="col">
+                                <div class="arts-content-borderDeco bg-white border border-end-0 text-center px-2 py-4">
+                                    <p class="fs-7 fs-lg-6 mb-1 mb-lg-2">擁有者</p>
+                                    <p class="squada-one fs-4 fs-lg-3 ">2.5 k</p>
+                                </div>
+                            </li>
+                            <li class="col">
+                                <div class="arts-content-borderDeco bg-white border border-end-0 text-center px-2 py-4">
+                                    <p class="fs-7 fs-lg-6 mb-1 mb-lg-2">底價</p>
+                                    <p class="squada-one fs-4 fs-lg-3 d-flex align-items-center justify-content-center">
+                                        <i class="fa-brands fa-ethereum me-1 fs-7 align-middle"></i>1.38 k</p>
+                                </div>
+                            </li>
+                            <li class="col">
+                                <div class="bg-white border text-center px-2 py-4">
+                                    <p class="fs-7 fs-lg-6 mb-1 mb-lg-2">項目</p>
+                                    <p class="squada-one fs-4 fs-lg-3 ">6.4 k</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- button -->
+                <div class="col-6 offset-6 col-lg-12 offset-lg-0 mb-6 mb-lg-10">
+                    <div class="d-flex justify-content-end ms-3">
+                        <a href="#" class="btn btn-white w-100 w-lg-auto py-2 px-6">最新上架<i
+                                class="fa-solid fa-sort ms-2"></i></a>
+                    </div>
+                </div>
+
+                <!-- arts masonry -->
+                <div class="row" data-masonry='{"percentPosition": true }'>
+
+                    <!-- 1 -->
+                    <div class="col-6 col-lg-4 mb-4 mb-lg-12">
+                        <div class="card arts-masonry-card border-0">
+                            <div class="p-2 p-lg-6">
+                                <div class="arts-masonry-img-container">
+                                    <img class="arts-masonry-img arts-masonry-img-1" src="./assets/images/art20.jpg"
+                                        alt="art20">
+                                    <!-- hover content -->
+                                    <div class="p-4 arts-masonry-img-hover-content position-absolute d-none d-lg-block">
+                                        <div
+                                            class="d-flex flex-column justify-content-between border border-white h-100 w-100 p-4">
+                                            <div class="text-white">
+                                                <p class="fw-bold mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                                                <i class="fa-brands fa-ethereum me-2"></i><span
+                                                    class="squada-one">300</span>
+                                            </div>
+                                            <div class="d-flex align-self-end">
+                                                <a href="#"
+                                                    class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
+                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">也太像企鵝了吧</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <!-- mobile -->
+                    <div class="col-6 col-lg-4 mb-4 mb-lg-12 d-lg-none">
+                        <div class="card arts-masonry-card border-0">
+                            <div class="p-2 p-lg-6">
+                                <div class="arts-masonry-img-container">
+                                    <img class="arts-masonry-img arts-masonry-img-2" src="./assets/images/art22.jpg"
+                                        alt="art22">
+                                    <!-- hover content -->
+                                    <div class="p-4 arts-masonry-img-hover-content position-absolute d-none d-lg-block">
+                                        <div
+                                            class="d-flex flex-column justify-content-between border border-white h-100 w-100 p-4">
+                                            <div class="text-white">
+                                                <p class="fw-bold mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                                                <i class="fa-brands fa-ethereum me-2"></i><span
+                                                    class="squada-one">300</span>
+                                            </div>
+                                            <div class="d-flex align-self-end">
+                                                <a href="#"
+                                                    class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
+                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">群聚的小鳥們</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- pc -->
+                    <div class="col-6 col-lg-4 mb-4 mb-lg-12 d-none d-lg-block">
+                        <div class="card arts-masonry-card border-0">
+                            <div class="p-2 p-lg-6">
+                                <div class="arts-masonry-img-container">
+                                    <img class="arts-masonry-img arts-masonry-img-2" src="./assets/images/art21.jpg"
+                                        alt="art21">
+                                    <!-- hover content -->
+                                    <div class="p-4 arts-masonry-img-hover-content position-absolute d-none d-lg-block">
+                                        <div
+                                            class="d-flex flex-column justify-content-between border border-white h-100 w-100 p-4">
+                                            <div class="text-white">
+                                                <p class="fw-bold mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                                                <i class="fa-brands fa-ethereum me-2"></i><span
+                                                    class="squada-one">300</span>
+                                            </div>
+                                            <div class="d-flex align-self-end">
+                                                <a href="#"
+                                                    class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
+                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">兩情相悅</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <!-- mobile -->
+                    <div class="col-6 col-lg-4 mb-4 mb-lg-12 d-lg-none">
+                        <div class="card arts-masonry-card border-0">
+                            <div class="p-2 p-lg-6">
+                                <div class="arts-masonry-img-container">
+                                    <img class="arts-masonry-img arts-masonry-img-3" src="./assets/images/art27.jpg"
+                                        alt="art27">
+                                    <!-- hover content -->
+                                    <div class="p-4 arts-masonry-img-hover-content position-absolute d-none d-lg-block">
+                                        <div
+                                            class="d-flex flex-column justify-content-between border border-white h-100 w-100 p-4">
+                                            <div class="text-white">
+                                                <p class="fw-bold mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                                                <i class="fa-brands fa-ethereum me-2"></i><span
+                                                    class="squada-one">300</span>
+                                            </div>
+                                            <div class="d-flex align-self-end">
+                                                <a href="#"
+                                                    class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
+                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">我真的受傷了</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- pc -->
+                    <div class="col-6 col-lg-4 mb-4 mb-lg-12 d-none d-lg-block">
+                        <div class="card arts-masonry-card border-0">
+                            <div class="p-2 p-lg-6">
+                                <div class="arts-masonry-img-container">
+                                    <img class="arts-masonry-img arts-masonry-img-3" src="./assets/images/art22.jpg"
+                                        alt="art22">
+                                    <!-- hover content -->
+                                    <div class="p-4 arts-masonry-img-hover-content position-absolute d-none d-lg-block">
+                                        <div
+                                            class="d-flex flex-column justify-content-between border border-white h-100 w-100 p-4">
+                                            <div class="text-white">
+                                                <p class="fw-bold mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                                                <i class="fa-brands fa-ethereum me-2"></i><span
+                                                    class="squada-one">300</span>
+                                            </div>
+                                            <div class="d-flex align-self-end">
+                                                <a href="#"
+                                                    class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
+                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">群聚的小鳥們</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <!-- mobile -->
+                    <div class="col-6 col-lg-4 mb-4 mb-lg-12 d-lg-none">
+                        <div class="card arts-masonry-card border-0">
+                            <div class="p-2 p-lg-6">
+                                <div class="arts-masonry-img-container">
+                                    <img class="arts-masonry-img arts-masonry-img-4" src="./assets/images/art25.jpg"
+                                        alt="art25">
+                                    <!-- hover content -->
+                                    <div class="p-4 arts-masonry-img-hover-content position-absolute d-none d-lg-block">
+                                        <div class="border border-white h-100 w-100 p-4">
+                                            <p class="fw-bold text-white fs-7 lh-1 mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                                            <div class="d-flex align-items-center text-white">
+                                                <i class="fa-brands fa-ethereum me-2"></i><span
+                                                    class="squada-one">300</span>
+                                                <a href="#"
+                                                    class="btn btn-white btn-triangle squada-one fs-7 py-2 px-2 px-xl-6 ms-2">MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
+                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">一大一小兩個恰恰恰恰好</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- pc -->
+                    <div class="col-6 col-lg-4 mb-4 mb-lg-12 d-none d-lg-block">
+                        <div class="card arts-masonry-card border-0">
+                            <div class="p-2 p-lg-6">
+                                <div class="arts-masonry-img-container">
+                                    <img class="arts-masonry-img arts-masonry-img-4" src="./assets/images/art23.jpg"
+                                        alt="art23">
+                                    <!-- hover content -->
+                                    <div class="p-4 arts-masonry-img-hover-content position-absolute d-none d-lg-block">
+                                        <div
+                                            class="d-flex flex-column justify-content-between border border-white h-100 w-100 p-4">
+                                            <div class="text-white">
+                                                <p class="fw-bold mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                                                <i class="fa-brands fa-ethereum me-2"></i><span
+                                                    class="squada-one">300</span>
+                                            </div>
+                                            <div class="d-flex align-self-end">
+                                                <a href="#"
+                                                    class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
+                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">與你分享的快樂勝過獨自擁有</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5 -->
+                    <!-- mobile -->
+                    <div class="col-6 col-lg-4 mb-4 mb-lg-12 d-lg-none">
+                        <div class="card arts-masonry-card border-0">
+                            <div class="p-2 p-lg-6">
+                                <div class="arts-masonry-img-container">
+                                    <img class="arts-masonry-img arts-masonry-img-5" src="./assets/images/art22.jpg"
+                                        alt="art22">
+                                    <!-- hover content -->
+                                    <div class="p-4 arts-masonry-img-hover-content position-absolute d-none d-lg-block">
+                                        <div
+                                            class="d-flex flex-column justify-content-between border border-white h-100 w-100 p-4">
+                                            <div class="text-white">
+                                                <p class="fw-bold mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                                                <i class="fa-brands fa-ethereum me-2"></i><span
+                                                    class="squada-one">300</span>
+                                            </div>
+                                            <div class="d-flex align-self-end">
+                                                <a href="#"
+                                                    class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
+                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">群聚的小鳥們</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- pc -->
+                    <div class="col-6 col-lg-4 mb-4 mb-lg-12 d-none d-lg-block">
+                        <div class="card arts-masonry-card border-0">
+                            <div class="p-2 p-lg-6">
+                                <div class="arts-masonry-img-container">
+                                    <img class="arts-masonry-img arts-masonry-img-5" src="./assets/images/art25.jpg"
+                                        alt="art25">
+                                    <!-- hover content -->
+                                    <div class="p-4 arts-masonry-img-hover-content position-absolute d-none d-lg-block">
+                                        <div
+                                            class="d-flex flex-column justify-content-between border border-white h-100 w-100 p-4">
+                                            <div class="text-white">
+                                                <p class="fw-bold mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                                                <i class="fa-brands fa-ethereum me-2"></i><span
+                                                    class="squada-one">300</span>
+                                            </div>
+                                            <div class="d-flex align-self-end">
+                                                <a href="#"
+                                                    class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
+                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">一大一小兩個恰恰好</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6 -->
+                    <!-- mobile -->
+                    <div class="col-6 col-lg-4 mb-4 mb-lg-12 d-lg-none">
+                        <div class="card arts-masonry-card border-0">
+                            <div class="p-2 p-lg-6">
+                                <div class="arts-masonry-img-container">
+                                    <img class="arts-masonry-img arts-masonry-img-6" src="./assets/images/art21.jpg"
+                                        alt="art21">
+                                    <!-- hover content -->
+                                    <div class="p-4 arts-masonry-img-hover-content position-absolute d-none d-lg-block">
+                                        <div class="border border-white h-100 w-100 p-4">
+                                            <p class="fw-bold text-white fs-7 lh-1 mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                                            <div class="d-flex align-items-center text-white">
+                                                <i class="fa-brands fa-ethereum me-2"></i><span
+                                                    class="squada-one">300</span>
+                                                <a href="#"
+                                                    class="btn btn-white btn-triangle squada-one fs-7 py-2 px-2 px-xl-6 ms-2">MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
+                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">兩情相悅</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- pc -->
+                    <div class="col-6 col-lg-4 mb-4 mb-lg-12 d-none d-lg-block">
+                        <div class="card arts-masonry-card border-0">
+                            <div class="p-2 p-lg-6">
+                                <div class="arts-masonry-img-container">
+                                    <img class="arts-masonry-img arts-masonry-img-6" src="./assets/images/art24.jpg"
+                                        alt="art24">
+                                    <!-- hover content -->
+                                    <div class="p-4 arts-masonry-img-hover-content position-absolute d-none d-lg-block">
+                                        <div
+                                            class="d-flex flex-column justify-content-between border border-white h-100 w-100 p-4">
+                                            <div class="text-white">
+                                                <p class="fw-bold mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                                                <i class="fa-brands fa-ethereum me-2"></i><span
+                                                    class="squada-one">300</span>
+                                            </div>
+                                            <div class="d-flex align-self-end">
+                                                <a href="#"
+                                                    class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
+                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">會唱metal的鳥</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7 -->
+                    <div class="col-6 col-lg-4 d-lg-none">
+                        <div class="card arts-masonry-card border-0">
+                            <div class="p-2 p-lg-6">
+                                <div class="arts-masonry-img-container">
+                                    <img class="arts-masonry-img arts-masonry-img-7" src="./assets/images/art23.jpg"
+                                        alt="art23">
+                                    <!-- hover content -->
+                                    <div class="p-4 arts-masonry-img-hover-content position-absolute d-none d-lg-block">
+                                        <div
+                                            class="d-flex flex-column justify-content-between border border-white h-100 w-100 p-4">
+                                            <div class="text-white">
+                                                <p class="fw-bold mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                                                <i class="fa-brands fa-ethereum me-2"></i><span
+                                                    class="squada-one">300</span>
+                                            </div>
+                                            <div class="d-flex align-self-end">
+                                                <a href="#"
+                                                    class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
+                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">與你分享的快樂</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 8 -->
+                    <div class="col-6 col-lg-4 mb-0 mb-lg-12 d-lg-none">
+                        <div class="card arts-masonry-card border-0">
+                            <div class="p-2 p-lg-6">
+                                <div class="arts-masonry-img-container">
+                                    <img class="arts-masonry-img arts-masonry-img-8" src="./assets/images/art22.jpg"
+                                        alt="art22">
+                                    <!-- hover content -->
+                                    <div class="p-4 arts-masonry-img-hover-content position-absolute d-none d-lg-block">
+                                        <div
+                                            class="d-flex flex-column justify-content-between border border-white h-100 w-100 p-4">
+                                            <div class="text-white">
+                                                <p class="fw-bold mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                                                <i class="fa-brands fa-ethereum me-2"></i><span
+                                                    class="squada-one">300</span>
+                                            </div>
+                                            <div class="d-flex align-self-end">
+                                                <a href="#"
+                                                    class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
+                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">群聚的小鳥們</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- mobile modal -->
+            <div class="modal fade p-0" id="art-mobile-modal" tabindex="-1" aria-labelledby="art-mobile-modal-Label"
+                aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                        <!-- header -->
+                        <div class="modal-header position-relative">
+                            <h4 class="modal-title text-center w-100" id="art-mobile-modal-Label">篩選條件</h4>
+                            <button type="button" class="btn-close arts-modal-btn-close position-absolute ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <!-- body -->
+                        <div class="modal-body p-3">
+                            <div class="bg-white d-lg-block">
+                                <!-- internet -->
+                                <div class="border-bottom pb-6">
+                                    <a class="btn arts-sidebar-btn d-flex justify-content-between align-items-center text-black p-0"
+                                        href="#arts-sidebar-collapse-internet" data-bs-toggle="collapse" role="button"
+                                        aria-expanded="false" aria-controls="arts-sidebar-collapse-internet">
+                                        <p class="fw-bold mb-0">網路</p>
+                                        <i class="fa-solid fa-angle-up"></i>
+                                        <i class="fa-solid fa-angle-down d-none"></i>
+                                    </a>
+                                    <ul class="collapse p-0 mb-0 show" id="arts-sidebar-collapse-internet">
+                                        <li class="form-check d-flex justify-content-between p-0 my-2">
+                                            <label class="form-check-label" for="arts-sidebar-checkbox-eth">以太坊</label>
+                                            <input type="checkbox" class="form-check-input" id="arts-sidebar-checkbox-eth">
+                                        </li>
+                                        <li class="form-check d-flex justify-content-between p-0">
+                                            <label class="form-check-label" for="arts-sidebar-checkbox-bnb">BNB 智能鏈</label>
+                                            <input type="checkbox" class="form-check-input" id="arts-sidebar-checkbox-bnb" checked>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- status -->
+                                <div class="border-bottom py-6">
+                                    <a class="btn arts-sidebar-btn d-flex justify-content-between align-items-center text-black p-0"
+                                        href="#arts-sidebar-collapse-status" data-bs-toggle="collapse" role="button"
+                                        aria-expanded="false" aria-controls="arts-sidebar-collapse-status">
+                                        <p class="fw-bold mb-0">狀態</p>
+                                        <i class="fa-solid fa-angle-up"></i>
+                                        <i class="fa-solid fa-angle-down d-none"></i>
+                                    </a>
+                                    <ul class="collapse p-0 mb-0 show" id="arts-sidebar-collapse-status">
+                                        <li class="form-check d-flex justify-content-between p-0 my-2">
+                                            <label class="form-check-label" for="arts-sidebar-checkbox-displayOnly">僅展示</label>
+                                            <input type="checkbox" class="form-check-input" id="arts-sidebar-checkbox-displayOnly">
+                                        </li>
+                                        <li class="form-check d-flex justify-content-between p-0">
+                                            <label class="form-check-label" for="arts-sidebar-checkbox-onSale">拍賣中</label>
+                                            <input type="checkbox" class="form-check-input" id="arts-sidebar-checkbox-onSale"
+                                                checked>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- price -->
+                                <div class="border-bottom py-6">
+                                    <a class="btn arts-sidebar-btn d-flex justify-content-between align-items-center text-black p-0"
+                                        href="#arts-sidebar-collapse-price" data-bs-toggle="collapse" role="button"
+                                        aria-expanded="false" aria-controls="arts-sidebar-collapse-price">
+                                        <p class="fw-bold mb-0">價格</p>
+                                        <i class="fa-solid fa-angle-up"></i>
+                                        <i class="fa-solid fa-angle-down d-none"></i>
+                                    </a>
+                                    <div class="collapse show mt-4" id="arts-sidebar-collapse-price">
+                                        <form class="d-flex align-items-center justify-content-between gap-2 me-18">
+                                            <select class="form-select arts-sidebar-form-select px-2 py-2">
+                                                <option selected>ETH</option>
+                                                <option>BNB</option>
+                                                <option>AVAX</option>
+                                                <option>SOL</option>
+                                            </select>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <input type="text" class="arts-sidebar-form-input">
+                                                <p class="mb-0">－</p>
+                                                <input type="text" class="arts-sidebar-form-input">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- attribute -->
+                                <div class="border-bottom py-6">
+                                    <p class="fw-bold text-dark mb-6">屬性</p>
+                                    <!-- breed -->
+                                    <div class="mb-6">
+                                        <a class="btn arts-sidebar-btn d-flex justify-content-between align-items-center text-black p-0"
+                                            href="#arts-sidebar-collapse-attri-breed" data-bs-toggle="collapse" role="button"
+                                            aria-expanded="false" aria-controls="arts-sidebar-collapse-attri-breed">
+                                            <p class="fw-bold mb-0">品種</p>
+                                            <i class="fa-solid fa-angle-up"></i>
+                                            <i class="fa-solid fa-angle-down d-none"></i>
+                                        </a>
+                                        <ul class="collapse show p-0 mb-0 mt-4" id="arts-sidebar-collapse-attri-breed">
+                                            <li class="form-check d-flex justify-content-between p-0 mb-2">
+                                                <label class="form-check-label" for="arts-sidebar-checkbox-eightBro">八哥</label>
+                                                <input type="checkbox" class="form-check-input" id="arts-sidebar-checkbox-eightBro">
+                                            </li>
+                                            <li class="form-check d-flex justify-content-between p-0 mb-2">
+                                                <label class="form-check-label" for="arts-sidebar-checkbox-tigerParrot">虎皮鸚鵡</label>
+                                                <input type="checkbox" class="form-check-input"
+                                                    id="arts-sidebar-checkbox-tigerParrot" checked>
+                                            </li>
+                                            <li class="form-check d-flex justify-content-between p-0 mb-2">
+                                                <label class="form-check-label"
+                                                    for="arts-sidebar-checkbox-BohemianWaxwing">太平鳥</label>
+                                                <input type="checkbox" class="form-check-input"
+                                                    id="arts-sidebar-checkbox-BohemianWaxwing">
+                                            </li>
+                                            <li class="form-check d-flex justify-content-between p-0">
+                                                <label class="form-check-label"
+                                                    for="arts-sidebar-checkbox-GarrulaxCanorus">畫眉鳥</label>
+                                                <input type="checkbox" class="form-check-input"
+                                                    id="arts-sidebar-checkbox-GarrulaxCanorus">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- quantity -->
+                                    <div class="mb-6">
+                                        <a class="btn arts-sidebar-btn d-flex justify-content-between align-items-center text-black p-0"
+                                            href="#arts-sidebar-collapse-attri-quantity" data-bs-toggle="collapse" role="button"
+                                            aria-expanded="false" aria-controls="arts-sidebar-collapse-attri-quantity">
+                                            <p class="fw-bold mb-0">鳥的數量</p>
+                                            <i class="fa-solid fa-angle-up d-none"></i>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </a>
+                                        <ul class="collapse p-0 mb-0" id="arts-sidebar-collapse-attri-quantity">
+                                            <li class="form-check d-flex justify-content-between p-0 my-2">
+                                                <label class="form-check-label" for="arts-sidebar-checkbox-1">1</label>
+                                                <input type="checkbox" class="form-check-input" id="arts-sidebar-checkbox-1">
+                                            </li>
+                                            <li class="form-check d-flex justify-content-between p-0 mb-2">
+                                                <label class="form-check-label" for="arts-sidebar-checkbox-2">2</label>
+                                                <input type="checkbox" class="form-check-input" id="arts-sidebar-checkbox-2"
+                                                    checked>
+                                            </li>
+                                            <li class="form-check d-flex justify-content-between p-0 mb-2">
+                                                <label class="form-check-label" for="arts-sidebar-checkbox-3">3</label>
+                                                <input type="checkbox" class="form-check-input" id="arts-sidebar-checkbox-3">
+                                            </li>
+                                            <li class="form-check d-flex justify-content-between p-0">
+                                                <label class="form-check-label" for="arts-sidebar-checkbox-4">4</label>
+                                                <input type="checkbox" class="form-check-input" id="arts-sidebar-checkbox-4">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- flower or weed -->
+                                    <div class="mb-6">
+                                        <a class="btn arts-sidebar-btn d-flex justify-content-between align-items-center text-black p-0"
+                                            href="#arts-sidebar-collapse-attri-flowers" data-bs-toggle="collapse" role="button"
+                                            aria-expanded="false" aria-controls="arts-sidebar-collapse-attri-flowers">
+                                            <p class="fw-bold mb-0">是否有花草</p>
+                                            <i class="fa-solid fa-angle-up d-none"></i>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </a>
+                                        <ul class="collapse p-0 mb-0" id="arts-sidebar-collapse-attri-flowers">
+                                            <li class="form-check d-flex justify-content-between p-0 my-2">
+                                                <label class="form-check-label" for="arts-sidebar-checkbox-true">有</label>
+                                                <input type="checkbox" class="form-check-input" id="arts-sidebar-checkbox-true">
+                                            </li>
+                                            <li class="form-check d-flex justify-content-between p-0 mb-2">
+                                                <label class="form-check-label" for="arts-sidebar-checkbox-false">沒有</label>
+                                                <input type="checkbox" class="form-check-input" id="arts-sidebar-checkbox-false"
+                                                    checked>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- bird color -->
+                                    <div class="mb-6">
+                                        <a class="btn arts-sidebar-btn d-flex justify-content-between align-items-center text-black p-0"
+                                            href="#arts-sidebar-collapse-attri-birdColor" data-bs-toggle="collapse" role="button"
+                                            aria-expanded="false" aria-controls="arts-sidebar-collapse-attri-birdColor">
+                                            <p class="fw-bold mb-0">鳥的顏色</p>
+                                            <i class="fa-solid fa-angle-up d-none"></i>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </a>
+                                        <ul class="collapse p-0 mb-0" id="arts-sidebar-collapse-attri-birdColor">
+                                            <li class="form-check d-flex justify-content-between p-0 my-2">
+                                                <label class="form-check-label" for="arts-sidebar-checkbox-white">白色</label>
+                                                <input type="checkbox" class="form-check-input" id="arts-sidebar-checkbox-white">
+                                            </li>
+                                            <li class="form-check d-flex justify-content-between p-0 mb-2">
+                                                <label class="form-check-label" for="arts-sidebar-checkbox-black">黑色</label>
+                                                <input type="checkbox" class="form-check-input" id="arts-sidebar-checkbox-black"
+                                                    checked>
+                                            </li>
+                                            <li class="form-check d-flex justify-content-between p-0 mb-2">
+                                                <label class="form-check-label" for="arts-sidebar-checkbox-blue">藍色</label>
+                                                <input type="checkbox" class="form-check-input" id="arts-sidebar-checkbox-blue">
+                                            </li>
+                                            <li class="form-check d-flex justify-content-between p-0 mb-2">
+                                                <label class="form-check-label" for="arts-sidebar-checkbox-others">其他</label>
+                                                <input type="checkbox" class="form-check-input" id="arts-sidebar-checkbox-others">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- footer -->
+                        <div class="modal-footer border-0 p-0">
+                            <button type="button" class="btn btn-primary border text-white py-3 px-6 w-100 m-0 ">確認</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</main>
+
+    <footer class="py-6 border-top border-4 position-relative deco-border-footer">
+      <p class="text-center mb-0">© ART NFT. All Rights Reserved</p>
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+      async></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

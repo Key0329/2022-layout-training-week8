@@ -21,6 +21,7 @@ $(document).ready(function () {
   var mySwiper = new Swiper(".mySwiper", {
     slidesPerView: "auto",
     spaceBetween: 24,
+    initialSlide: 1,
     // loop: true,
     centeredSlides: true,
     pagination: {

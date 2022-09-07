@@ -34182,6 +34182,14 @@ body {
   color: #E6553B !important;
 }
 
+.hover-bg-secondary:hover {
+  background-color: #53C139;
+}
+
+.hover-border-primary:hover {
+  border-color: #E6553B !important;
+}
+
 .deco-border-footer::before {
   content: "";
   position: absolute;
@@ -34286,6 +34294,34 @@ body {
 .fa-bars-logo, .fa-xmark-logo {
   font-size: 21px;
   line-height: 1;
+}
+
+.wallet-modal-btn-close {
+  right: 12px;
+  top: 24px;
+}
+
+.wallet-img {
+  width: 16px;
+  height: 16px;
+}
+
+.hover-check-primary:hover .fa-check {
+  display: block !important;
+  top: 18px;
+  right: 16px;
+  z-index: 2;
+}
+
+.hover-check-primary:focus .fa-check {
+  display: block !important;
+  top: 18px;
+  right: 16px;
+  z-index: 1;
+}
+
+.focus-border-primary:focus {
+  border-color: #E6553B !important;
 }
 
 .index-banner-img {

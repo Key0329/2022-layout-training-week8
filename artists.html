@@ -59,7 +59,7 @@
         <ul class="list-unstyled mb-0 d-none d-lg-flex align-items-center">
           <li><a class="text-black fw-bold border-start text-nowrap px-12 py-10 hover-text-primary" href="#">探索</a></li>
           <li><a class="text-black fw-bold border-start text-nowrap px-12 py-10 hover-text-primary" href="#">市值</a></li>
-          <li><a class="text-black border-start ps-12 py-10 lh-1 hover-text-primary" href="#"><i
+          <li><a class="text-black border-start ps-12 py-10 lh-1 hover-text-primary" href="#wallet-modal" type="button" data-bs-toggle="modal"><i
                 class="fa-solid fa-wallet fs-3"></i></a>
           </li>
         </ul>
@@ -77,7 +77,76 @@
             <a class="nav-link fs-5 fw-bold text-black text-center hover-text-primary w-100 p-6" href="#">市值</a>
           </li>
         </ul>
-        <button class="btn btn-primary border fs-5 text-white w-100 py-3 mb-6" type="submit">連結錢包</button>
+        <button class="btn btn-primary border fs-5 text-white w-100 py-3 mb-6" type="button" data-bs-toggle="modal" data-bs-target="#wallet-modal">連結錢包</button>
+      </div>
+    </div>
+
+    <!-- wallet modal -->
+    <div class="modal fade p-0" id="wallet-modal" tabindex="-1" aria-labelledby="wallet-modal-Label"
+      aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen-lg-down modal-dialog-centered">
+        <div class="modal-content">
+          <!-- modal header -->
+          <div class="modal-header position-relative">
+            <h4 class="modal-title text-center w-100" id="wallet-modal-Label">連結你的錢包</h4>
+            <button type="button" class="btn-close wallet-modal-btn-close position-absolute ms-0" data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <!-- modal body -->
+          <div class="modal-body py-6 px-4">
+            <div class="bg-white d-lg-block">
+              <ul class="row row-cols-1 row-cols-lg-2 g-2 list-unstyled">
+
+                <li class="col">
+                  <a href="#" class="border text-black hover-border-primary hover-check-primary focus-border-primary d-flex align-items-center p-4 position-relative">
+                    <img class="wallet-img me-4" src="./assets/images/logo/connect01.png" alt="connect01">
+                    <p class="squada-one lh-1">MetaMask</p>
+                    <i class="fa-solid fa-check text-primary position-absolute d-none"></i>
+                  </a>
+                </li>
+                <li class="col">
+                  <a href="#" class="border text-black hover-border-primary hover-check-primary focus-border-primary d-flex align-items-center p-4 position-relative">
+                    <img class="wallet-img me-4" src="./assets/images/logo/connect02.png" alt="connect02">
+                    <p class="squada-one lh-1">Coinbase Wallet</p>
+                    <i class="fa-solid fa-check text-primary position-absolute d-none"></i>
+                  </a>
+                </li>
+                <li class="col">
+                  <a href="#" class="border text-black hover-border-primary hover-check-primary focus-border-primary d-flex align-items-center p-4 position-relative">
+                    <img class="wallet-img me-4" src="./assets/images/logo/connect03.png" alt="connect03">
+                    <p class="squada-one lh-1">WalletConnect</p>
+                    <i class="fa-solid fa-check text-primary position-absolute d-none"></i>
+                  </a>
+                </li>
+                <li class="col">
+                  <a href="#" class="border text-black hover-border-primary hover-check-primary focus-border-primary d-flex align-items-center p-4 position-relative">
+                    <img class="wallet-img me-4" src="./assets/images/logo/connect04.png" alt="connect04">
+                    <p class="squada-one lh-1">Phantom</p>
+                    <i class="fa-solid fa-check text-primary position-absolute d-none"></i>
+                  </a>
+                </li>
+                <li class="col">
+                  <a href="#" class="border text-black hover-border-primary hover-check-primary focus-border-primary d-flex align-items-center p-4 position-relative">
+                    <img class="wallet-img me-4" src="./assets/images/logo/connect05.png" alt="connect05">
+                    <p class="squada-one lh-1">Glow</p>
+                    <i class="fa-solid fa-check text-primary position-absolute d-none"></i>
+                  </a>
+                </li>
+                <li class="col">
+                  <a href="#" class="border text-black hover-border-primary hover-check-primary focus-border-primary d-flex align-items-center p-4 position-relative">
+                    <img class="wallet-img me-4" src="./assets/images/logo/connect06.png" alt="connect06">
+                    <p class="squada-one lh-1">Fortmatic</p>
+                    <i class="fa-solid fa-check text-primary position-absolute d-none"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- modal footer -->
+          <div class="modal-footer border-0 p-0 mb-lg-6">
+            <button type="button" class="btn btn-primary border hover-bg-secondary text-white py-2 px-12 my-0 w-100 w-lg-auto mx-auto">連結錢包</button>
+          </div>
+        </div>
       </div>
     </div>
 

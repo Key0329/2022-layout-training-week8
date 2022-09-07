@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
 
 <head>
   <meta charset="UTF-8">
@@ -26,7 +26,7 @@
 
           <!-- logo -->
           <h1 class="mb-0 flex-grow-1">
-            <a class="navbar-brand navbar-brand-logo" href="#">ART NFT</a>
+            <a class="navbar-brand navbar-brand-logo" href="./index.html">ART NFT</a>
           </h1>
 
           <!-- previous -->
@@ -57,8 +57,8 @@
         </div>
         <!-- pc menu -->
         <ul class="list-unstyled mb-0 d-none d-lg-flex align-items-center">
-          <li><a class="text-black fw-bold border-start text-nowrap px-12 py-10 hover-text-primary" href="#">探索</a></li>
-          <li><a class="text-black fw-bold border-start text-nowrap px-12 py-10 hover-text-primary" href="#">市值</a></li>
+          <li><a class="text-black fw-bold border-start text-nowrap px-12 py-10 hover-text-primary" href="./explore.html">探索</a></li>
+          <li><a class="text-black fw-bold border-start text-nowrap px-12 py-10 hover-text-primary" href="./ranking.html">市值</a></li>
           <li><a class="text-black border-start ps-12 py-10 lh-1 hover-text-primary" href="#wallet-modal" type="button" data-bs-toggle="modal"><i
                 class="fa-solid fa-wallet fs-3"></i></a>
           </li>
@@ -71,10 +71,10 @@
       <div class="container">
         <ul class="navbar-nav mb-0">
           <li class="nav-item d-flex justify-content-center border-bottom">
-            <a class="nav-link fs-5 fw-bold text-black text-center hover-text-primary w-100 p-6" href="#">探索</a>
+            <a class="nav-link fs-5 fw-bold text-black text-center hover-text-primary w-100 p-6" href="./explore.html">探索</a>
           </li>
           <li class="nav-item d-flex justify-content-center">
-            <a class="nav-link fs-5 fw-bold text-black text-center hover-text-primary w-100 p-6" href="#">市值</a>
+            <a class="nav-link fs-5 fw-bold text-black text-center hover-text-primary w-100 p-6" href="./ranking.html">市值</a>
           </li>
         </ul>
         <button class="btn btn-primary border fs-5 text-white w-100 py-3 mb-6" type="button" data-bs-toggle="modal" data-bs-target="#wallet-modal">連結錢包</button>
@@ -172,14 +172,30 @@
                             <div class="card-body artists-intro-card-body border h-100 py-6 px-4 p-lg-6">
                                 <div class="d-flex justify-content-between align-items-center mb-2 mb-lg-4">
                                     <h1 class="squada-one lh-1 fs-2 fs-lg-1">Michael</h1>
-                                    <div class="d-flex">
-                                        <i class="fa-brands fa-discord"></i>
-                                        <i class="fa-brands fa-facebook-f ms-2"></i>
-                                        <i class="fa-solid fa-globe ms-2"></i>
-                                        <i class="fa-brands fa-twitter ms-2"></i>
-                                    </div>
+                                    <ul class="d-flex list-unstyled mb-0">
+                                        <li>
+                                            <a href="#">
+                                                <i class="text-black hover-text-primary fa-brands fa-discord"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="text-black hover-text-primary fa-brands fa-facebook-f ms-2"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="text-black hover-text-primary fa-solid fa-globe ms-2"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="text-black hover-text-primary fa-brands fa-twitter ms-2"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <p class="squada-one lh-1 mb-6">0x3ya666…88ef</p>
+                                <a href="#" class="squada-one lh-1 hover-text-primary text-black mb-6">0x3ya666…88ef</a>
                                 <p class="mb-0">
                                     Michael自小在山林長大，能夠與花草樹木大自然進行靈體溝通，創作題材常見大山、大水、花草與樹木，從日常生活出發，擁有個⼈獨樹⼀格的創作風格，作品觸及靈魂深處、探索未知宇宙，透過與大自然的溝通，探討著存在的本質。​
                                 </p>
@@ -223,8 +239,7 @@
             <ul class="nav nav-tabs mb-6 mb-lg-10" id="nav-tab" role="tablist">
 
                 <li class="nav-item">
-                    <a class="nav-link text-dark p-4 px-lg-12" data-bs-toggle="tab" href="#tab-artWorks"
-                        role="tab">
+                    <a class="nav-link text-dark p-4 px-lg-12" data-bs-toggle="tab" href="#tab-artWorks" role="tab">
                         <div class="d-flex align-items-end">
                             <h2 class="squada-one fs-lg-1 lh-1 mb-0 me-lg-4">Art Works</h2>
                             <p class="fs-4 fw-bold d-none d-lg-block mb-0">系列作品</p>
@@ -233,8 +248,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link text-dark p-4 px-lg-12" data-bs-toggle="tab" href="#tab-collection"
-                        role="tab">
+                    <a class="nav-link text-dark p-4 px-lg-12" data-bs-toggle="tab" href="#tab-collection" role="tab">
                         <div class="d-flex align-items-end">
                             <h2 class="squada-one fs-lg-1 lh-1 mb-0 me-lg-4">Collection</h2>
                             <p class="fs-4 fw-bold d-none d-lg-block mb-0">收藏品</p>
@@ -256,31 +270,34 @@
                             <div class="d-flex flex-column flex-lg-row">
                                 <p class="mb-6">我又沒有特別喜歡花，為什麼不給我現金就好，擺在那也不知道要幹嘛，只好畫起來看有沒有人要買，阿不然如果真的喜歡我，把這些都買回去八。</p>
 
-                                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2 mb-4 mb-lg-0 artists-artWorks-img-container position-lg-absolute">
-                                        <div class="col mt-0">
-                                            <div class="artists-artWorks-img border border-10">
-                                                <img src="./assets/images/the-new-york-public-library-vBejyCBXZBY-unsplash.jpg" alt="art">
-                                            </div>
+                                <ul
+                                    class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2 mb-4 mb-lg-0 artists-artWorks-img-container position-lg-absolute list-unstyled">
+                                    <li class="col mt-0">
+                                        <div class="artists-artWorks-img border border-10">
+                                            <img src="./assets/images/the-new-york-public-library-vBejyCBXZBY-unsplash.jpg"
+                                                alt="art">
                                         </div>
-                                        <div class="col mt-0 d-none d-md-block">
-                                            <div class="artists-artWorks-img border border-10">
-                                                <img src="./assets/images/art30.jpg" alt="art">
-                                            </div>
+                                    </li>
+                                    <li class="col mt-0 d-none d-md-block">
+                                        <div class="artists-artWorks-img border border-10">
+                                            <img src="./assets/images/art30.jpg" alt="art">
                                         </div>
-                                        <div class="col mt-0 d-none d-lg-block">
-                                            <div class="artists-artWorks-img border border-10">
-                                                <img src="./assets/images/art14.jpg" alt="art">
-                                            </div>
+                                    </li>
+                                    <li class="col mt-0 d-none d-lg-block">
+                                        <div class="artists-artWorks-img border border-10">
+                                            <img src="./assets/images/art14.jpg" alt="art">
                                         </div>
-                                        <div class="col mt-0 d-none d-lg-block">
-                                            <div class="artists-artWorks-img border border-10">
-                                                <img src="./assets/images/art29.jpg" alt="art">
-                                            </div>
+                                    </li>
+                                    <li class="col mt-0 d-none d-lg-block">
+                                        <div class="artists-artWorks-img border border-10">
+                                            <img src="./assets/images/art29.jpg" alt="art">
                                         </div>
-                                    </div>
+                                    </li>
+                                </ul>
 
                                 <div class="mx-auto">
-                                    <a href="#" class="btn btn-white btn-triangle squada-one fs-5 lh-1 py-2 px-12 ms-lg-22">MORE</a>
+                                    <a href="./arts.html"
+                                        class="btn btn-white btn-triangle squada-one fs-5 lh-1 py-2 px-12 ms-lg-22">MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -292,31 +309,33 @@
                             <div class="d-flex flex-column flex-lg-row">
                                 <p class="mb-6">家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
 
-                                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2 mb-4 mb-lg-0 artists-artWorks-img-container position-lg-absolute">
-                                        <div class="col mt-0">
-                                            <div class="artists-artWorks-img border border-10">
-                                                <img src="./assets/images/art27.jpg" alt="art">
-                                            </div>
+                                <ul
+                                    class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2 mb-4 mb-lg-0 artists-artWorks-img-container position-lg-absolute list-unstyled">
+                                    <li class="col mt-0">
+                                        <div class="artists-artWorks-img border border-10">
+                                            <img src="./assets/images/art27.jpg" alt="art">
                                         </div>
-                                        <div class="col mt-0 d-none d-md-block">
-                                            <div class="artists-artWorks-img border border-10">
-                                                <img src="./assets/images/art20.jpg" alt="art">
-                                            </div>
+                                    </li>
+                                    <li class="col mt-0 d-none d-md-block">
+                                        <div class="artists-artWorks-img border border-10">
+                                            <img src="./assets/images/art20.jpg" alt="art">
                                         </div>
-                                        <div class="col mt-0 d-none d-lg-block">
-                                            <div class="artists-artWorks-img border border-10">
-                                                <img src="./assets/images/art26.jpg" alt="art">
-                                            </div>
+                                    </li>
+                                    <li class="col mt-0 d-none d-lg-block">
+                                        <div class="artists-artWorks-img border border-10">
+                                            <img src="./assets/images/art26.jpg" alt="art">
                                         </div>
-                                        <div class="col mt-0 d-none d-lg-block">
-                                            <div class="artists-artWorks-img border border-10">
-                                                <img src="./assets/images/art22.jpg" alt="art">
-                                            </div>
+                                    </li>
+                                    <li class="col mt-0 d-none d-lg-block">
+                                        <div class="artists-artWorks-img border border-10">
+                                            <img src="./assets/images/art22.jpg" alt="art">
                                         </div>
-                                    </div>
+                                    </li>
+                                </ul>
 
                                 <div class="mx-auto">
-                                    <a href="#" class="btn btn-white btn-triangle squada-one fs-5 lh-1 py-2 px-12 ms-lg-22">MORE</a>
+                                    <a href="./arts.html"
+                                        class="btn btn-white btn-triangle squada-one fs-5 lh-1 py-2 px-12 ms-lg-22">MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -326,25 +345,27 @@
                 <!-- collection -->
                 <div class="tab-pane fade tab-collection" id="tab-collection" role="tabpanel">
                     <!-- artists masonry -->
-                    <div class="row mb-lg-10" data-masonry='{"percentPosition": true }'>
+                    <ul class="row mb-lg-10 list-unstyled" data-masonry='{"percentPosition": true }'>
 
                         <!-- 1 -->
-                        <div class="col-6 col-lg-3 mb-4 mb-lg-12">
+                        <li class="col-6 col-lg-3 mb-4 mb-lg-12">
                             <div class="card index-artwork-card border-0">
                                 <div class="p-2 p-lg-6">
                                     <div class="index-artwork-img-container">
-                                        <img class="index-artwork-img index-artwork-img-1" src="./assets/images/art09.jpg"
-                                            alt="art09">
+                                        <img class="index-artwork-img index-artwork-img-1"
+                                            src="./assets/images/art09.jpg" alt="art09">
                                         <!-- hover content -->
-                                        <div class="p-4 index-artwork-img-hover-content position-absolute d-none d-lg-block">
+                                        <div
+                                            class="p-4 index-artwork-img-hover-content position-absolute d-none d-lg-block">
                                             <div
                                                 class="d-flex flex-column justify-content-between border border-white h-100 w-100 p-4">
                                                 <div class="text-white">
                                                     <p class="fw-bold mb-4">唯一想擁有的人，唯一不可以擁有的</p>
-                                                    <i class="fa-brands fa-ethereum me-2"></i><span class="squada-one">300</span>
+                                                    <i class="fa-brands fa-ethereum me-2"></i><span
+                                                        class="squada-one">300</span>
                                                 </div>
                                                 <div class="d-flex align-self-end">
-                                                    <a href="#"
+                                                    <a href="./art-intro.html"
                                                         class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
                                                 </div>
                                             </div>
@@ -355,25 +376,27 @@
                                     <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">區塊戀-他的私生活</h5>
                                 </div>
                             </div>
-                        </div>
-            
+                        </li>
+
                         <!-- 2 -->
-                        <div class="col-6 col-lg-3 mb-4 mb-lg-12">
+                        <li class="col-6 col-lg-3 mb-4 mb-lg-12">
                             <div class="card index-artwork-card border-0">
                                 <div class="p-2 p-lg-6">
                                     <div class="index-artwork-img-container">
-                                        <img class="index-artwork-img index-artwork-img-2" src="./assets/images/art10.jpg"
-                                            alt="art10">
+                                        <img class="index-artwork-img index-artwork-img-2"
+                                            src="./assets/images/art10.jpg" alt="art10">
                                         <!-- hover content -->
-                                        <div class="p-4 index-artwork-img-hover-content position-absolute d-none d-lg-block">
+                                        <div
+                                            class="p-4 index-artwork-img-hover-content position-absolute d-none d-lg-block">
                                             <div
                                                 class="d-flex flex-column justify-content-between border border-white h-100 w-100 p-4">
                                                 <div class="text-white">
                                                     <p class="fw-bold mb-4">唯一想擁有的人，唯一不可以擁有的</p>
-                                                    <i class="fa-brands fa-ethereum me-2"></i><span class="squada-one">300</span>
+                                                    <i class="fa-brands fa-ethereum me-2"></i><span
+                                                        class="squada-one">300</span>
                                                 </div>
                                                 <div class="d-flex align-self-end">
-                                                    <a href="#"
+                                                    <a href="./art-intro.html"
                                                         class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
                                                 </div>
                                             </div>
@@ -384,26 +407,29 @@
                                     <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">夏娃的醜聞</h5>
                                 </div>
                             </div>
-                        </div>
-            
+                        </li>
+
                         <!-- 3 -->
-                        <!-- mobile -->
-                        <div class="col-6 col-lg-3 mb-4 mb-lg-12 d-lg-none">
+                        <li class="col-6 col-lg-3 mb-4 mb-lg-12">
                             <div class="card index-artwork-card border-0">
                                 <div class="p-2 p-lg-6">
                                     <div class="index-artwork-img-container">
-                                        <img class="index-artwork-img index-artwork-img-3" src="./assets/images/art02.jpg"
-                                            alt="art02">
+                                        <img class="index-artwork-img index-artwork-img-6 d-none d-lg-block"
+                                            src="./assets/images/art03.jpg" alt="art03">
+                                        <img class="index-artwork-img index-artwork-img-3 d-lg-none"
+                                            src="./assets/images/art02.jpg" alt="art02">
                                         <!-- hover content -->
-                                        <div class="p-4 index-artwork-img-hover-content position-absolute d-none d-lg-block">
+                                        <div
+                                            class="p-4 index-artwork-img-hover-content position-absolute d-none d-lg-block">
                                             <div
                                                 class="d-flex flex-column justify-content-between border border-white h-100 w-100 p-4">
                                                 <div class="text-white">
                                                     <p class="fw-bold mb-4">唯一想擁有的人，唯一不可以擁有的</p>
-                                                    <i class="fa-brands fa-ethereum me-2"></i><span class="squada-one">300</span>
+                                                    <i class="fa-brands fa-ethereum me-2"></i><span
+                                                        class="squada-one">300</span>
                                                 </div>
                                                 <div class="d-flex align-self-end">
-                                                    <a href="#"
+                                                    <a href="./art-intro.html"
                                                         class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
                                                 </div>
                                             </div>
@@ -411,53 +437,28 @@
                                     </div>
                                 </div>
                                 <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
-                                    <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">藍色啤酒海</h5>
+                                    <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0 d-none d-lg-block">十分鐘就到</h5>
+                                    <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0 d-lg-none">藍色啤酒海</h5>
                                 </div>
                             </div>
-                        </div>
-                        <!-- pc -->
-                        <div class="col-6 col-lg-3 mb-4 mb-lg-12 d-none d-lg-block">
-                            <div class="card index-artwork-card border-0">
-                                <div class="p-2 p-lg-6">
-                                    <div class="index-artwork-img-container">
-                                        <img class="index-artwork-img index-artwork-img-6" src="./assets/images/art03.jpg"
-                                            alt="art03">
-                                        <!-- hover content -->
-                                        <div class="p-4 index-artwork-img-hover-content position-absolute d-none d-lg-block">
-                                            <div
-                                                class="d-flex flex-column justify-content-between border border-white h-100 w-100 p-4">
-                                                <div class="text-white">
-                                                    <p class="fw-bold mb-4">唯一想擁有的人，唯一不可以擁有的</p>
-                                                    <i class="fa-brands fa-ethereum me-2"></i><span class="squada-one">300</span>
-                                                </div>
-                                                <div class="d-flex align-self-end">
-                                                    <a href="#"
-                                                        class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
-                                    <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">十分鐘就到</h5>
-                                </div>
-                            </div>
-                        </div>
-            
+                        </li>
+
                         <!-- 4 -->
-                        <div class="col-6 col-lg-3 mb-4 mb-lg-12">
+                        <li class="col-6 col-lg-3 mb-4 mb-lg-12">
                             <div class="card index-artwork-card border-0">
                                 <div class="p-2 p-lg-6">
                                     <div class="index-artwork-img-container">
-                                        <img class="index-artwork-img index-artwork-img-4" src="./assets/images/art11.jpg"
-                                            alt="art11">
+                                        <img class="index-artwork-img index-artwork-img-4"
+                                            src="./assets/images/art11.jpg" alt="art11">
                                         <!-- hover content -->
-                                        <div class="p-4 index-artwork-img-hover-content position-absolute d-none d-lg-block">
+                                        <div
+                                            class="p-4 index-artwork-img-hover-content position-absolute d-none d-lg-block">
                                             <div class="border border-white h-100 w-100 p-4">
                                                 <p class="fw-bold text-white fs-7 lh-1 mb-4">唯一想擁有的人，唯一不可以擁有的</p>
                                                 <div class="d-flex align-items-center text-white">
-                                                    <i class="fa-brands fa-ethereum me-2"></i><span class="squada-one">300</span>
-                                                    <a href="#"
+                                                    <i class="fa-brands fa-ethereum me-2"></i><span
+                                                        class="squada-one">300</span>
+                                                    <a href="./art-intro.html"
                                                         class="btn btn-white btn-triangle squada-one fs-7 py-2 px-2 px-xl-6 ms-2">MORE</a>
                                                 </div>
                                             </div>
@@ -468,51 +469,29 @@
                                     <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">沒有人愛我</h5>
                                 </div>
                             </div>
-                        </div>
-            
+                        </li>
+
                         <!-- 5 -->
-                        <!-- mobile -->
-                        <div class="col-6 col-lg-3 mb-4 mb-lg-12 d-lg-none">
+                        <li class="col-6 col-lg-3 mb-4 mb-lg-12">
                             <div class="card index-artwork-card border-0">
                                 <div class="p-2 p-lg-6">
                                     <div class="index-artwork-img-container">
-                                        <img class="index-artwork-img index-artwork-img-5" src="./assets/images/art12.jpg"
-                                            alt="art12">
+                                        <img class="index-artwork-img index-artwork-img-8 d-none d-lg-block"
+                                            src="./assets/images/art27.jpg" alt="art27">
+                                        <img class="index-artwork-img index-artwork-img-5 d-lg-none"
+                                            src="./assets/images/art12.jpg" alt="art12">
                                         <!-- hover content -->
-                                        <div class="p-4 index-artwork-img-hover-content position-absolute d-none d-lg-block">
-                                            <div class="border border-white h-100 w-100 p-4">
-                                                <p class="fw-bold text-white fs-7 lh-1 mb-4">唯一想擁有的人，唯一不可以擁有的</p>
-                                                <div class="d-flex align-items-center text-white">
-                                                    <i class="fa-brands fa-ethereum me-2"></i><span class="squada-one">300</span>
-                                                    <a href="#"
-                                                        class="btn btn-white btn-triangle squada-one fs-7 py-2 px-2 px-xl-6 ms-2">MORE</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
-                                    <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">不哭不哭眼淚是珍珠</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- pc -->
-                        <div class="col-6 col-lg-3 mb-4 mb-lg-12 d-none d-lg-block">
-                            <div class="card index-artwork-card border-0">
-                                <div class="p-2 p-lg-6">
-                                    <div class="index-artwork-img-container">
-                                        <img class="index-artwork-img index-artwork-img-8" src="./assets/images/art27.jpg"
-                                            alt="art27">
-                                        <!-- hover content -->
-                                        <div class="p-4 index-artwork-img-hover-content position-absolute d-none d-lg-block">
+                                        <div
+                                            class="p-4 index-artwork-img-hover-content position-absolute d-none d-lg-block">
                                             <div
                                                 class="d-flex flex-column justify-content-between border border-white h-100 w-100 p-4">
                                                 <div class="text-white">
                                                     <p class="fw-bold mb-4">唯一想擁有的人，唯一不可以擁有的</p>
-                                                    <i class="fa-brands fa-ethereum me-2"></i><span class="squada-one">300</span>
+                                                    <i class="fa-brands fa-ethereum me-2"></i><span
+                                                        class="squada-one">300</span>
                                                 </div>
                                                 <div class="d-flex align-self-end">
-                                                    <a href="#"
+                                                    <a href="./art-intro.html"
                                                         class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
                                                 </div>
                                             </div>
@@ -520,54 +499,30 @@
                                     </div>
                                 </div>
                                 <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
-                                    <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">我真的受傷了</h5>
+                                    <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0 d-none d-lg-block">我真的受傷了</h5>
+                                    <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0 d-lg-none">不哭不哭眼淚是珍珠</h5>
                                 </div>
                             </div>
-                        </div>
-            
+                        </li>
+
                         <!-- 6 -->
-                        <!-- mobile -->
-                        <div class="col-6 col-lg-3 mb-4 mb-lg-12 d-lg-none">
+                        <li class="col-6 col-lg-3 mb-4 mb-lg-12">
                             <div class="card index-artwork-card border-0">
                                 <div class="p-2 p-lg-6">
                                     <div class="index-artwork-img-container">
-                                        <img class="index-artwork-img index-artwork-img-6" src="./assets/images/art03.jpg"
-                                            alt="art03">
+                                        <img class="index-artwork-img index-artwork-img-5 d-none d-lg-block"
+                                            src="./assets/images/art12.jpg" alt="art12">
+                                            <img class="index-artwork-img index-artwork-img-6 d-lg-none"
+                                            src="./assets/images/art03.jpg" alt="art03">
                                         <!-- hover content -->
-                                        <div class="p-4 index-artwork-img-hover-content position-absolute d-none d-lg-block">
-                                            <div
-                                                class="d-flex flex-column justify-content-between border border-white h-100 w-100 p-4">
-                                                <div class="text-white">
-                                                    <p class="fw-bold mb-4">唯一想擁有的人，唯一不可以擁有的</p>
-                                                    <i class="fa-brands fa-ethereum me-2"></i><span class="squada-one">300</span>
-                                                </div>
-                                                <div class="d-flex align-self-end">
-                                                    <a href="#"
-                                                        class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
-                                    <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">十分鐘就到</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- pc -->
-                        <div class="col-6 col-lg-3 mb-4 mb-lg-12 d-none d-lg-block">
-                            <div class="card index-artwork-card border-0">
-                                <div class="p-2 p-lg-6">
-                                    <div class="index-artwork-img-container">
-                                        <img class="index-artwork-img index-artwork-img-5" src="./assets/images/art12.jpg"
-                                            alt="art12">
-                                        <!-- hover content -->
-                                        <div class="p-4 index-artwork-img-hover-content position-absolute d-none d-lg-block">
+                                        <div
+                                            class="p-4 index-artwork-img-hover-content position-absolute d-none d-lg-block">
                                             <div class="border border-white h-100 w-100 p-4">
                                                 <p class="fw-bold text-white fs-7 lh-1 mb-4">唯一想擁有的人，唯一不可以擁有的</p>
                                                 <div class="d-flex align-items-center text-white">
-                                                    <i class="fa-brands fa-ethereum me-2"></i><span class="squada-one">300</span>
-                                                    <a href="#"
+                                                    <i class="fa-brands fa-ethereum me-2"></i><span
+                                                        class="squada-one">300</span>
+                                                    <a href="./art-intro.html"
                                                         class="btn btn-white btn-triangle squada-one fs-7 py-2 px-2 px-xl-6 ms-2">MORE</a>
                                                 </div>
                                             </div>
@@ -575,30 +530,34 @@
                                     </div>
                                 </div>
                                 <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
-                                    <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">不哭不哭眼淚是珍珠</h5>
+                                    <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0 d-none d-lg-block">不哭不哭眼淚是珍珠</h5>
+                                    <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0 d-lg-none">十分鐘就到</h5>
                                 </div>
                             </div>
-                        </div>
+                        </li>
 
-                        
+
                         <!-- 7 -->
-                        <!-- mobile -->
-                        <div class="col-6 col-lg-3 mb-lg-12 d-lg-none">
+                        <li class="col-6 col-lg-3">
                             <div class="card index-artwork-card border-0">
                                 <div class="p-2 p-lg-6">
                                     <div class="index-artwork-img-container">
-                                        <img class="index-artwork-img index-artwork-img-8" src="./assets/images/art27.jpg"
-                                            alt="art27">
+                                        <img class="index-artwork-img index-artwork-img-7 d-none d-lg-block"
+                                            src="./assets/images/art04.jpg" alt="art04">
+                                            <img class="index-artwork-img index-artwork-img-8 d-lg-none"
+                                            src="./assets/images/art27.jpg" alt="art27">
                                         <!-- hover content -->
-                                        <div class="p-4 index-artwork-img-hover-content position-absolute d-none d-lg-block">
+                                        <div
+                                            class="p-4 index-artwork-img-hover-content position-absolute d-none d-lg-block">
                                             <div
                                                 class="d-flex flex-column justify-content-between border border-white h-100 w-100 p-4">
                                                 <div class="text-white">
                                                     <p class="fw-bold mb-4">唯一想擁有的人，唯一不可以擁有的</p>
-                                                    <i class="fa-brands fa-ethereum me-2"></i><span class="squada-one">300</span>
+                                                    <i class="fa-brands fa-ethereum me-2"></i><span
+                                                        class="squada-one">300</span>
                                                 </div>
                                                 <div class="d-flex align-self-end">
-                                                    <a href="#"
+                                                    <a href="./art-intro.html"
                                                         class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
                                                 </div>
                                             </div>
@@ -606,57 +565,33 @@
                                     </div>
                                 </div>
                                 <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
-                                    <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">我真的受傷了</h5>
+                                    <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0 d-none d-lg-block">我這樣有美嗎</h5>
+                                    <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0 d-lg-none">我真的受傷了</h5>
                                 </div>
                             </div>
-                        </div>
-                        <!-- pc -->
-                        <div class="col-6 col-lg-3 d-none d-lg-block">
-                            <div class="card index-artwork-card border-0">
-                                <div class="p-2 p-lg-6">
-                                    <div class="index-artwork-img-container">
-                                        <img class="index-artwork-img index-artwork-img-7" src="./assets/images/art04.jpg"
-                                            alt="art04">
-                                        <!-- hover content -->
-                                        <div class="p-4 index-artwork-img-hover-content position-absolute d-none d-lg-block">
-                                            <div
-                                                class="d-flex flex-column justify-content-between border border-white h-100 w-100 p-4">
-                                                <div class="text-white">
-                                                    <p class="fw-bold mb-4">唯一想擁有的人，唯一不可以擁有的</p>
-                                                    <i class="fa-brands fa-ethereum me-2"></i><span class="squada-one">300</span>
-                                                </div>
-                                                <div class="d-flex align-self-end">
-                                                    <a href="#"
-                                                        class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
-                                    <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">我這樣有美嗎</h5>
-                                </div>
-                            </div>
-                        </div>
-            
+                        </li>
+
                         <!-- 8 -->
-                        <!-- mobile -->
-                        <div class="col-6 col-lg-3 d-lg-none">
+                        <li class="col-6 col-lg-3 mb-4 mb-lg-12">
                             <div class="card index-artwork-card border-0">
                                 <div class="p-2 p-lg-6">
                                     <div class="index-artwork-img-container">
-                                        <img class="index-artwork-img index-artwork-img-7" src="./assets/images/art04.jpg"
-                                            alt="art04">
+                                        <img class="index-artwork-img index-artwork-img-3 d-none d-lg-block"
+                                            src="./assets/images/art02.jpg" alt="art02">
+                                            <img class="index-artwork-img index-artwork-img-7 d-lg-none"
+                                            src="./assets/images/art04.jpg" alt="art04">
                                         <!-- hover content -->
-                                        <div class="p-4 index-artwork-img-hover-content position-absolute d-none d-lg-block">
+                                        <div
+                                            class="p-4 index-artwork-img-hover-content position-absolute d-none d-lg-block">
                                             <div
                                                 class="d-flex flex-column justify-content-between border border-white h-100 w-100 p-4">
                                                 <div class="text-white">
                                                     <p class="fw-bold mb-4">唯一想擁有的人，唯一不可以擁有的</p>
-                                                    <i class="fa-brands fa-ethereum me-2"></i><span class="squada-one">300</span>
+                                                    <i class="fa-brands fa-ethereum me-2"></i><span
+                                                        class="squada-one">300</span>
                                                 </div>
                                                 <div class="d-flex align-self-end">
-                                                    <a href="#"
+                                                    <a href="./art-intro.html"
                                                         class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
                                                 </div>
                                             </div>
@@ -664,46 +599,14 @@
                                     </div>
                                 </div>
                                 <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
-                                    <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">我這樣有美嗎</h5>
+                                    <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0 d-none d-lg-block">藍色啤酒海</h5>
+                                    <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0 d-lg-none">我這樣有美嗎</h5>
                                 </div>
                             </div>
-                        </div>
-                
-                        <!-- pc -->
-                        <div class="col-6 col-lg-3 mb-4 mb-lg-12 d-none d-lg-block">
-                            <div class="card index-artwork-card border-0">
-                                <div class="p-2 p-lg-6">
-                                    <div class="index-artwork-img-container">
-                                        <img class="index-artwork-img index-artwork-img-3" src="./assets/images/art02.jpg"
-                                            alt="art02">
-                                        <!-- hover content -->
-                                        <div class="p-4 index-artwork-img-hover-content position-absolute d-none d-lg-block">
-                                            <div
-                                                class="d-flex flex-column justify-content-between border border-white h-100 w-100 p-4">
-                                                <div class="text-white">
-                                                    <p class="fw-bold mb-4">唯一想擁有的人，唯一不可以擁有的</p>
-                                                    <i class="fa-brands fa-ethereum me-2"></i><span class="squada-one">300</span>
-                                                </div>
-                                                <div class="d-flex align-self-end">
-                                                    <a href="#"
-                                                        class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
-                                    <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">藍色啤酒海</h5>
-                                </div>
-                            </div>
-                        </div>
-                        
-            
-                    </div>
+                        </li>
+                    </ul>
                 </div>
-
             </div>
-
         </section>
 
     </div>

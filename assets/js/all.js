@@ -46,6 +46,7 @@ $(document).ready(function () {
   var artIntroSwiper = new Swiper(".artIntroSwiper", {
     slidesPerView: 2,
     spaceBetween: 24,
+    initialSlide: 1,
     loop: true,
     // centeredSlides: true,
     pagination: {

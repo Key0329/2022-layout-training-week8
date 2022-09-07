@@ -34954,6 +34954,10 @@ body {
 .arts-mobile-button {
   z-index: 3;
   bottom: 24px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .arts-modal-btn-close {

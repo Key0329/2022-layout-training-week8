@@ -21,10 +21,10 @@ $(document).ready(function () {
 
 
   // index swiper
-
   let mySwiper = new Swiper(".mySwiper", {
     slidesPerView: "auto",
     spaceBetween: 24,
+    initialSlide: 1,
     // loop: true,
     centeredSlides: true,
     pagination: {
@@ -55,7 +55,6 @@ $(document).ready(function () {
 // ------------------ arts intro ------------------
 
   // arts intro swiper
-
   let artIntroSwiper = new Swiper(".artIntroSwiper", {
     slidesPerView: 2,
     spaceBetween: 24,

@@ -65,7 +65,7 @@ current: arts
                         </a>
                         <div class="collapse show mt-4" id="arts-sidebar-collapse-price">
                             <form class="d-xxl-flex align-items-center justify-content-between gap-2">
-                                <select class="form-select arts-sidebar-form-select px-2 py-2">
+                                <select class="form-select arts-sidebar-form-select px-2 py-2 mb-2 mb-xxl-0">
                                     <option selected>ETH</option>
                                     <option>BNB</option>
                                     <option>AVAX</option>
@@ -199,7 +199,7 @@ current: arts
             </aside>
 
             <!-- mobile select button -->
-            <div class="arts-mobile-button d-flex justify-content-center position-fixed d-lg-none">
+            <div class="arts-mobile-button position-fixed d-lg-none w-auto">
                 <button class="btn btn-black py-2 px-12 w-auto" type="button" data-bs-toggle="modal"
                     data-bs-target="#art-mobile-modal">篩選條件<span class="squada-one lh-1 ms-1">2</span></button>
             </div>
@@ -209,7 +209,7 @@ current: arts
                 <div class="row mb-10">
                     <!-- outside bird -->
                     <div class="col-xl-7">
-                        <div class="d-flex mb-1">
+                        <div class="d-flex align-items-center mb-1">
                             <div>
                                 <img class="arts-content-img-artist rounded-circle me-4"
                                     src="./assets/images/artist01.jpg" alt="artist01">
@@ -253,16 +253,17 @@ current: arts
                 <!-- button -->
                 <div class="col-6 offset-6 col-lg-12 offset-lg-0 mb-6 mb-lg-10">
                     <div class="d-flex justify-content-end ms-3">
-                        <a href="#" class="btn btn-white w-100 w-lg-auto py-2 px-6">最新上架<i
+                        <a href="./arts.html" class="btn btn-white w-100 w-lg-auto py-2 px-6">最新上架<i
                                 class="fa-solid fa-sort ms-2"></i></a>
+                        
                     </div>
                 </div>
 
                 <!-- arts masonry -->
-                <div class="row" data-masonry='{"percentPosition": true }'>
+                <ul class="row mb-0 list-unstyled overflow-hidden" data-masonry='{"percentPosition": true }'>
 
                     <!-- 1 -->
-                    <div class="col-6 col-lg-4 mb-4 mb-lg-12">
+                    <li class="col-6 col-lg-4 mb-4 mb-lg-12">
                         <div class="card arts-masonry-card border-0">
                             <div class="p-2 p-lg-6">
                                 <div class="arts-masonry-img-container">
@@ -278,7 +279,7 @@ current: arts
                                                     class="squada-one">300</span>
                                             </div>
                                             <div class="d-flex align-self-end">
-                                                <a href="#"
+                                                <a href="./art-intro.html"
                                                     class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
                                             </div>
                                         </div>
@@ -289,15 +290,16 @@ current: arts
                                 <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">也太像企鵝了吧</h5>
                             </div>
                         </div>
-                    </div>
+                    </li>
 
                     <!-- 2 -->
-                    <!-- mobile -->
-                    <div class="col-6 col-lg-4 mb-4 mb-lg-12 d-lg-none">
+                    <li class="col-6 col-lg-4 mb-4 mb-lg-12">
                         <div class="card arts-masonry-card border-0">
                             <div class="p-2 p-lg-6">
                                 <div class="arts-masonry-img-container">
-                                    <img class="arts-masonry-img arts-masonry-img-2" src="./assets/images/art22.jpg"
+                                    <img class="arts-masonry-img arts-masonry-img-2 d-none d-lg-block" src="./assets/images/art21.jpg"
+                                        alt="art21">
+                                    <img class="arts-masonry-img arts-masonry-img-2 d-lg-none" src="./assets/images/art22.jpg"
                                         alt="art22">
                                     <!-- hover content -->
                                     <div class="p-4 arts-masonry-img-hover-content position-absolute d-none d-lg-block">
@@ -309,7 +311,7 @@ current: arts
                                                     class="squada-one">300</span>
                                             </div>
                                             <div class="d-flex align-self-end">
-                                                <a href="#"
+                                                <a href="./art-intro.html"
                                                     class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
                                             </div>
                                         </div>
@@ -317,47 +319,20 @@ current: arts
                                 </div>
                             </div>
                             <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
-                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">群聚的小鳥們</h5>
+                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0 d-none d-lg-block">兩情相悅</h5>
+                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0 d-lg-none">群聚的小鳥們</h5>
                             </div>
                         </div>
-                    </div>
-                    <!-- pc -->
-                    <div class="col-6 col-lg-4 mb-4 mb-lg-12 d-none d-lg-block">
-                        <div class="card arts-masonry-card border-0">
-                            <div class="p-2 p-lg-6">
-                                <div class="arts-masonry-img-container">
-                                    <img class="arts-masonry-img arts-masonry-img-2" src="./assets/images/art21.jpg"
-                                        alt="art21">
-                                    <!-- hover content -->
-                                    <div class="p-4 arts-masonry-img-hover-content position-absolute d-none d-lg-block">
-                                        <div
-                                            class="d-flex flex-column justify-content-between border border-white h-100 w-100 p-4">
-                                            <div class="text-white">
-                                                <p class="fw-bold mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
-                                                <i class="fa-brands fa-ethereum me-2"></i><span
-                                                    class="squada-one">300</span>
-                                            </div>
-                                            <div class="d-flex align-self-end">
-                                                <a href="#"
-                                                    class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
-                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">兩情相悅</h5>
-                            </div>
-                        </div>
-                    </div>
+                    </li>
 
                     <!-- 3 -->
-                    <!-- mobile -->
-                    <div class="col-6 col-lg-4 mb-4 mb-lg-12 d-lg-none">
+                    <li class="col-6 col-lg-4 mb-4 mb-lg-12">
                         <div class="card arts-masonry-card border-0">
                             <div class="p-2 p-lg-6">
                                 <div class="arts-masonry-img-container">
-                                    <img class="arts-masonry-img arts-masonry-img-3" src="./assets/images/art27.jpg"
+                                    <img class="arts-masonry-img arts-masonry-img-3 d-none d-lg-block" src="./assets/images/art22.jpg"
+                                        alt="art22">
+                                    <img class="arts-masonry-img arts-masonry-img-3 d-lg-none" src="./assets/images/art27.jpg"
                                         alt="art27">
                                     <!-- hover content -->
                                     <div class="p-4 arts-masonry-img-hover-content position-absolute d-none d-lg-block">
@@ -369,7 +344,7 @@ current: arts
                                                     class="squada-one">300</span>
                                             </div>
                                             <div class="d-flex align-self-end">
-                                                <a href="#"
+                                                <a href="./art-intro.html"
                                                     class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
                                             </div>
                                         </div>
@@ -377,74 +352,21 @@ current: arts
                                 </div>
                             </div>
                             <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
-                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">我真的受傷了</h5>
+                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0 d-none d-lg-block">群聚的小鳥們</h5>
+                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0 d-lg-none">我真的受傷了</h5>
                             </div>
                         </div>
-                    </div>
-                    <!-- pc -->
-                    <div class="col-6 col-lg-4 mb-4 mb-lg-12 d-none d-lg-block">
-                        <div class="card arts-masonry-card border-0">
-                            <div class="p-2 p-lg-6">
-                                <div class="arts-masonry-img-container">
-                                    <img class="arts-masonry-img arts-masonry-img-3" src="./assets/images/art22.jpg"
-                                        alt="art22">
-                                    <!-- hover content -->
-                                    <div class="p-4 arts-masonry-img-hover-content position-absolute d-none d-lg-block">
-                                        <div
-                                            class="d-flex flex-column justify-content-between border border-white h-100 w-100 p-4">
-                                            <div class="text-white">
-                                                <p class="fw-bold mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
-                                                <i class="fa-brands fa-ethereum me-2"></i><span
-                                                    class="squada-one">300</span>
-                                            </div>
-                                            <div class="d-flex align-self-end">
-                                                <a href="#"
-                                                    class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
-                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">群聚的小鳥們</h5>
-                            </div>
-                        </div>
-                    </div>
+                    </li>
 
                     <!-- 4 -->
-                    <!-- mobile -->
-                    <div class="col-6 col-lg-4 mb-4 mb-lg-12 d-lg-none">
+                    <li class="col-6 col-lg-4 mb-4 mb-lg-12">
                         <div class="card arts-masonry-card border-0">
                             <div class="p-2 p-lg-6">
                                 <div class="arts-masonry-img-container">
-                                    <img class="arts-masonry-img arts-masonry-img-4" src="./assets/images/art25.jpg"
-                                        alt="art25">
-                                    <!-- hover content -->
-                                    <div class="p-4 arts-masonry-img-hover-content position-absolute d-none d-lg-block">
-                                        <div class="border border-white h-100 w-100 p-4">
-                                            <p class="fw-bold text-white fs-7 lh-1 mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
-                                            <div class="d-flex align-items-center text-white">
-                                                <i class="fa-brands fa-ethereum me-2"></i><span
-                                                    class="squada-one">300</span>
-                                                <a href="#"
-                                                    class="btn btn-white btn-triangle squada-one fs-7 py-2 px-2 px-xl-6 ms-2">MORE</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
-                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">一大一小兩個恰恰恰恰好</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- pc -->
-                    <div class="col-6 col-lg-4 mb-4 mb-lg-12 d-none d-lg-block">
-                        <div class="card arts-masonry-card border-0">
-                            <div class="p-2 p-lg-6">
-                                <div class="arts-masonry-img-container">
-                                    <img class="arts-masonry-img arts-masonry-img-4" src="./assets/images/art23.jpg"
+                                    <img class="arts-masonry-img arts-masonry-img-4 d-none d-lg-block" src="./assets/images/art23.jpg"
                                         alt="art23">
+                                    <img class="arts-masonry-img arts-masonry-img-4 d-lg-none" src="./assets/images/art25.jpg"
+                                        alt="art25">
                                     <!-- hover content -->
                                     <div class="p-4 arts-masonry-img-hover-content position-absolute d-none d-lg-block">
                                         <div
@@ -455,7 +377,7 @@ current: arts
                                                     class="squada-one">300</span>
                                             </div>
                                             <div class="d-flex align-self-end">
-                                                <a href="#"
+                                                <a href="./art-intro.html"
                                                     class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
                                             </div>
                                         </div>
@@ -463,18 +385,20 @@ current: arts
                                 </div>
                             </div>
                             <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
-                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">與你分享的快樂勝過獨自擁有</h5>
+                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0 d-none d-lg-block">與你分享的快樂勝過獨自擁有</h5>
+                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0 d-lg-none">一大一小兩個恰恰恰恰好</h5>
                             </div>
                         </div>
-                    </div>
+                    </li>
 
                     <!-- 5 -->
-                    <!-- mobile -->
-                    <div class="col-6 col-lg-4 mb-4 mb-lg-12 d-lg-none">
+                    <li class="col-6 col-lg-4 mb-4 mb-lg-12">
                         <div class="card arts-masonry-card border-0">
                             <div class="p-2 p-lg-6">
                                 <div class="arts-masonry-img-container">
-                                    <img class="arts-masonry-img arts-masonry-img-5" src="./assets/images/art22.jpg"
+                                    <img class="arts-masonry-img arts-masonry-img-5 d-none d-lg-block" src="./assets/images/art25.jpg"
+                                        alt="art25">
+                                    <img class="arts-masonry-img arts-masonry-img-5 d-lg-none" src="./assets/images/art22.jpg"
                                         alt="art22">
                                     <!-- hover content -->
                                     <div class="p-4 arts-masonry-img-hover-content position-absolute d-none d-lg-block">
@@ -486,7 +410,7 @@ current: arts
                                                     class="squada-one">300</span>
                                             </div>
                                             <div class="d-flex align-self-end">
-                                                <a href="#"
+                                                <a href="./art-intro.html"
                                                     class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
                                             </div>
                                         </div>
@@ -494,76 +418,23 @@ current: arts
                                 </div>
                             </div>
                             <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
-                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">群聚的小鳥們</h5>
+                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0 d-none d-lg-block">一大一小兩個恰恰好</h5>
+                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0 d-lg-none">群聚的小鳥們</h5>
                             </div>
                         </div>
-                    </div>
-                    <!-- pc -->
-                    <div class="col-6 col-lg-4 mb-4 mb-lg-12 d-none d-lg-block">
-                        <div class="card arts-masonry-card border-0">
-                            <div class="p-2 p-lg-6">
-                                <div class="arts-masonry-img-container">
-                                    <img class="arts-masonry-img arts-masonry-img-5" src="./assets/images/art25.jpg"
-                                        alt="art25">
-                                    <!-- hover content -->
-                                    <div class="p-4 arts-masonry-img-hover-content position-absolute d-none d-lg-block">
-                                        <div
-                                            class="d-flex flex-column justify-content-between border border-white h-100 w-100 p-4">
-                                            <div class="text-white">
-                                                <p class="fw-bold mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
-                                                <i class="fa-brands fa-ethereum me-2"></i><span
-                                                    class="squada-one">300</span>
-                                            </div>
-                                            <div class="d-flex align-self-end">
-                                                <a href="#"
-                                                    class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
-                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">一大一小兩個恰恰好</h5>
-                            </div>
-                        </div>
-                    </div>
+                    </li>
 
                     <!-- 6 -->
-                    <!-- mobile -->
-                    <div class="col-6 col-lg-4 mb-4 mb-lg-12 d-lg-none">
+                    <li class="col-6 col-lg-4 mb-4 mb-lg-12">
                         <div class="card arts-masonry-card border-0">
                             <div class="p-2 p-lg-6">
                                 <div class="arts-masonry-img-container">
-                                    <img class="arts-masonry-img arts-masonry-img-6" src="./assets/images/art21.jpg"
+                                    <img class="arts-masonry-img arts-masonry-img-6 d-none d-lg-block" src="./assets/images/art24.jpg"
+                                        alt="art24">
+                                    <img class="arts-masonry-img arts-masonry-img-6 d-lg-none" src="./assets/images/art21.jpg"
                                         alt="art21">
                                     <!-- hover content -->
                                     <div class="p-4 arts-masonry-img-hover-content position-absolute d-none d-lg-block">
-                                        <div class="border border-white h-100 w-100 p-4">
-                                            <p class="fw-bold text-white fs-7 lh-1 mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
-                                            <div class="d-flex align-items-center text-white">
-                                                <i class="fa-brands fa-ethereum me-2"></i><span
-                                                    class="squada-one">300</span>
-                                                <a href="#"
-                                                    class="btn btn-white btn-triangle squada-one fs-7 py-2 px-2 px-xl-6 ms-2">MORE</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
-                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">兩情相悅</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- pc -->
-                    <div class="col-6 col-lg-4 mb-4 mb-lg-12 d-none d-lg-block">
-                        <div class="card arts-masonry-card border-0">
-                            <div class="p-2 p-lg-6">
-                                <div class="arts-masonry-img-container">
-                                    <img class="arts-masonry-img arts-masonry-img-6" src="./assets/images/art24.jpg"
-                                        alt="art24">
-                                    <!-- hover content -->
-                                    <div class="p-4 arts-masonry-img-hover-content position-absolute d-none d-lg-block">
                                         <div
                                             class="d-flex flex-column justify-content-between border border-white h-100 w-100 p-4">
                                             <div class="text-white">
@@ -572,7 +443,7 @@ current: arts
                                                     class="squada-one">300</span>
                                             </div>
                                             <div class="d-flex align-self-end">
-                                                <a href="#"
+                                                <a href="./art-intro.html"
                                                     class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
                                             </div>
                                         </div>
@@ -580,13 +451,14 @@ current: arts
                                 </div>
                             </div>
                             <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
-                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">會唱metal的鳥</h5>
+                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0 d-none d-lg-block">會唱metal的鳥</h5>
+                                <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0 d-lg-none">兩情相悅</h5>
                             </div>
                         </div>
-                    </div>
+                    </li>
 
                     <!-- 7 -->
-                    <div class="col-6 col-lg-4 d-lg-none">
+                    <li class="col-6 col-lg-4 d-lg-none">
                         <div class="card arts-masonry-card border-0">
                             <div class="p-2 p-lg-6">
                                 <div class="arts-masonry-img-container">
@@ -602,7 +474,7 @@ current: arts
                                                     class="squada-one">300</span>
                                             </div>
                                             <div class="d-flex align-self-end">
-                                                <a href="#"
+                                                <a href="./art-intro.html"
                                                     class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
                                             </div>
                                         </div>
@@ -613,10 +485,10 @@ current: arts
                                 <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">與你分享的快樂</h5>
                             </div>
                         </div>
-                    </div>
+                    </li>
 
                     <!-- 8 -->
-                    <div class="col-6 col-lg-4 mb-0 mb-lg-12 d-lg-none">
+                    <li class="col-6 col-lg-4 mb-0 mb-lg-12 d-lg-none">
                         <div class="card arts-masonry-card border-0">
                             <div class="p-2 p-lg-6">
                                 <div class="arts-masonry-img-container">
@@ -632,7 +504,7 @@ current: arts
                                                     class="squada-one">300</span>
                                             </div>
                                             <div class="d-flex align-self-end">
-                                                <a href="#"
+                                                <a href="./art-intro.html"
                                                     class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
                                             </div>
                                         </div>
@@ -643,9 +515,9 @@ current: arts
                                 <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">群聚的小鳥們</h5>
                             </div>
                         </div>
-                    </div>
+                    </li>
 
-                </div>
+                </ul>
             </div>
 
             <!-- mobile modal -->

@@ -1,0 +1,53 @@
+.art-ranking{
+    &-number{
+        width: 40px;
+        @include pad{
+            width: 54px;
+        }
+    }
+    &-price{
+        width: 62px !important;
+    }
+    &-avatar{
+        width: 48px;
+        height: 48px;
+    }
+    &-triangle{
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            border-top: 32px solid transparent;
+            border-right: 32px solid #000;
+            right: 0;
+            bottom: 0;
+        }
+        &::before{
+            content: "+";
+            position: absolute;
+            color: white;
+            right: 4px;
+            bottom: 0;
+            z-index: 1;
+            font-size: 20px;
+            line-height: 1;
+        }
+        &:hover{
+            .notoTC{
+                color: $secondary;
+            }
+            &::after{
+                border-right: 32px solid $secondary;
+            }
+        }
+        &.show{
+            &::after{
+                border-right: 32px solid $primary;
+            }
+            &::before{
+                content: "-";
+                font-size: 30px;
+            }
+        }
+    }
+}

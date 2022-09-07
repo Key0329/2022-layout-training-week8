@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-// ------------------ index ------------------
+  // ------------------ index ------------------
 
   // navbar ham menu
   $(".navbar-toggler-logo").click(function (e) {
@@ -42,7 +42,7 @@ $(document).ready(function () {
 
 
 
-// ------------------ arts ------------------
+  // ------------------ arts ------------------
 
   // collapse arrow
   $(".art-collapse-btn").click(function (e) {
@@ -52,7 +52,7 @@ $(document).ready(function () {
 
 
 
-// ------------------ arts intro ------------------
+  // ------------------ arts intro ------------------
 
   // arts intro swiper
   let artIntroSwiper = new Swiper(".artIntroSwiper", {
@@ -75,14 +75,22 @@ $(document).ready(function () {
 
 
 
-// ------------------ ranking ------------------
+  // ------------------ ranking ------------------
 
-$(".art-ranking-triangle").click(function(e){
-  event.preventDefault();
-  $(this).toggleClass("show");
+  $(".art-ranking-triangle").click(function (e) {
+    event.preventDefault();
+    $(this).toggleClass("show");
 
-})
+  })
 
+  // init Masonry
+  var $grid = $('.grid').masonry({
+    // options...
+  });
+  // layout Masonry after each image loads
+  $grid.imagesLoaded().progress(function () {
+    $grid.masonry('layout');
+  });
 
 
 });

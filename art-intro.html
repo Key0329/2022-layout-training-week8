@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    ART NFT - Arts-Intro
+  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body class="bg-light">
+
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-light py-4 py-lg-0 border-bottom">
+      <div class="container">
+
+        <div class="d-flex align-items-center w-100">
+
+          <!-- logo -->
+          <h1 class="mb-0 flex-grow-1">
+            <a class="navbar-brand navbar-brand-logo" href="#">ART NFT</a>
+          </h1>
+
+          <!-- previous -->
+          <a class="navbar-previous lh-1 fs-5 text-black navbar-previous me-auto d-none" href="#"><i
+              class="fa-solid fa-angle-left"></i></a>
+
+          <div class="d-flex justify-content-end py-lg-10 px-lg-12 w-100 w-lg-auto border-start-lg">
+            <!-- search box -->
+            <input
+              class="navbar-searchBox bg-transparent border-0 fs-7 fs-lg-6 lh-1 lh-lg-base w-100 p-0 mx-4 mx-lg-0 d-none d-lg-block"
+              type="text" placeholder="搜尋作品名稱、藝術家名稱">
+            <!-- magnifying-glass pc -->
+            <a class="lh-1 text-black navbar-glass-pc d-none d-lg-block hover-text-primary" href="#"><i
+                class="fa-solid fa-magnifying-glass fs-5 fs-lg-3 ms-lg-6"></i></a>
+            <!-- magnifying-glass mobile -->
+            <a class="lh-1 text-black navbar-glass-mobile d-lg-none hover-text-primary" href="#"><i
+                class="fa-solid fa-magnifying-glass fs-5 fs-lg-3 ms-lg-6"></i></a>
+            <!-- ham button -->
+            <button class="navbar-toggler navbar-toggler-logo border-0 p-0 lh-1 ms-6 hover-text-primary" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa-solid fa-bars fa-bars-logo"></i>
+              <i class="fa-solid fa-xmark fa-xmark-logo d-none"></i>
+            </button>
+          </div>
+
+
+        </div>
+        <!-- pc menu -->
+        <ul class="list-unstyled mb-0 d-none d-lg-flex align-items-center">
+          <li><a class="text-black fw-bold border-start text-nowrap px-12 py-10 hover-text-primary" href="#">探索</a></li>
+          <li><a class="text-black fw-bold border-start text-nowrap px-12 py-10 hover-text-primary" href="#">市值</a></li>
+          <li><a class="text-black border-start ps-12 py-10 lh-1 hover-text-primary" href="#"><i
+                class="fa-solid fa-wallet fs-3"></i></a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+    <!-- 摺疊切換內容 -->
+    <div class="collapse navbar-collapse border-bottom" id="navbarToggler">
+      <div class="container">
+        <ul class="navbar-nav mb-0">
+          <li class="nav-item d-flex justify-content-center border-bottom">
+            <a class="nav-link fs-5 fw-bold text-black text-center hover-text-primary w-100 p-6" href="#">探索</a>
+          </li>
+          <li class="nav-item d-flex justify-content-center">
+            <a class="nav-link fs-5 fw-bold text-black text-center hover-text-primary w-100 p-6" href="#">市值</a>
+          </li>
+        </ul>
+        <button class="btn btn-primary border fs-5 text-white w-100 py-3 mb-6" type="submit">連結錢包</button>
+      </div>
+    </div>
+
+  </header>
+
+
+  
+<main class="mt-6 mt-lg-10 mb-12 mb-lg-22">
+    <div class="container">
+
+        <div class="row row-cols-1 row-cols-lg-2 g-6 mb-10">
+            <!-- photo -->
+            <div class="col">
+                <div class="art-intro-photo"></div>
+            </div>
+            <!-- two love -->
+            <div class="col">
+                <div class="bg-white border pt-4 px-4 pb-6 px-lg-10 pb-lg-8">
+                    <div class="d-lg-flex flex-row-reverse justify-content-between align-items-center mb-4">
+                        <div class="d-flex align-items-center mb-2 mb-lg-0">
+                            <img class="art-intro-avatar rounded-circle me-2" src="./assets/images/artist01.jpg"
+                                alt="artist01">
+                            <p class="squada-one lh-1 mb-0">Michael</p>
+                        </div>
+                        <h2 class="fs-lg-1 fw-bold">兩情相悅</h2>
+                    </div>
+                    <p class="fs-7 text-dark mb-0">最高出價</p>
+                    <div class="d-flex justify-content-between align-items-end">
+                        <div class="d-flex align-items-center">
+                            <img src="./assets/images/user01.jpg" alt="user01"
+                                class="art-intro-avatar rounded-circle me-2">
+                            <i class="fa-solid fa-arrow-right me-2"></i>
+                            <p class="squada-one lh-1 mb-0">0.044Eth</p>
+                        </div>
+                        <button class="btn btn-primary border text-white fs-5 py-2 px-12">出價</button>
+                    </div>
+                </div>
+                <div class="bg-white border border-top-0 py-6 px-4 pt-lg-8 pb-md-42 pb-xl-48 px-lg-10">
+                    <p class="mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                    <p class="mb-4">而且其中一隻竟然有梳油頭，不知道是不是有用定型液，他們感情真好，出門還會特別打扮，看著看著不禁思考，我怎麼會變這樣？</p>
+                    <p class="mb-0">好羨慕啊，我也要有這樣兩情相悅的另一半。</p>
+                </div>
+            </div>
+            <!-- attribute -->
+            <div class="col mb-lg-9">
+                <div class="bg-white border">
+                    <a class="btn art-collapse-btn d-flex justify-content-between align-items-center border-bottom text-black p-4 p-lg-6"
+                        href="#art-intro-collapse-attri" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="art-intro-collapse-attri">
+                        <p class="fw-bold mb-0">屬性</p>
+                        <i class="fa-solid fa-angle-up"></i>
+                        <i class="fa-solid fa-angle-down d-none"></i>
+                    </a>
+                    <ul class="collapse show list-group list-group-flush py-6 px-4 p-lg-6 mb-0"
+                        id="art-intro-collapse-attri">
+                        <li class="list-group-item d-flex justify-content-between p-0 pb-2 mb-2">
+                            <p class="mb-0">品種</p>
+                            <p class="text-dark mb-0">青藍金剛鸚鵡</p>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between p-0 pb-2 mb-2">
+                            <p class="mb-0">鳥的數量</p>
+                            <p class="text-dark mb-0">2隻</p>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between p-0 pb-2 mb-2">
+                            <p class="mb-0">是否有花草</p>
+                            <p class="text-dark mb-0">是</p>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between p-0">
+                            <p class="mb-0">鳥的顏色</p>
+                            <p class="text-dark mb-0">藍色</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- price -->
+            <div class="col">
+                <div class="bg-white border">
+                    <a class="btn art-collapse-btn d-flex justify-content-between align-items-center border-bottom text-black p-4 p-lg-6"
+                        href="#art-intro-collapse-price" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="art-intro-collapse-price">
+                        <p class="fw-bold mb-0">出價</p>
+                        <i class="fa-solid fa-angle-up"></i>
+                        <i class="fa-solid fa-angle-down d-none"></i>
+                    </a>
+                    <div class="collapse show py-6 px-4 p-lg-6" id="art-intro-collapse-price">
+                        <table class="table table-hover mb-0">
+                            <thead class="bg-light">
+                                <tr>
+                                    <th class="border-0 text-center text-lg-start fw-normal fs-7 w-50 ps-4" scope="col">價格</th>
+                                    <th class="border-0 text-center text-lg-start fw-normal fs-7" scope="col">期限</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="border-light ps-0 ps-lg-4" scope="row">
+                                        <div class="d-flex align-items-center">
+                                            <img src="./assets/images/artist03.jpg" alt="artist03"
+                                                class="art-intro-avatar rounded-circle me-2">
+                                            <i class="fa-solid fa-arrow-right me-2"></i>
+                                            <p class="squada-one lh-1 mb-0">0.044Eth</p>
+                                        </div>
+                                    </th>
+                                    <td class="border-light text-dark text-end text-lg-start align-middle pe-0">3個月後</td>
+                                </tr>
+                                <tr>
+                                    <th class="border-light ps-0 ps-lg-4" scope="row">
+                                        <div class="d-flex align-items-center">
+                                            <img src="./assets/images/user02.jpg" alt="user02"
+                                                class="art-intro-avatar rounded-circle me-2">
+                                            <i class="fa-solid fa-arrow-right me-2"></i>
+                                            <p class="squada-one lh-1 mb-0">0.044Eth</p>
+                                        </div>
+                                    </th>
+                                    <td class="border-light text-dark text-end text-lg-start align-middle pe-0">1個月後</td>
+                                </tr>
+                                <tr>
+                                    <th class="border-0 ps-0 ps-lg-4" scope="row">
+                                        <div class="d-flex align-items-center">
+                                            <img src="./assets/images/user03.jpg" alt="user03"
+                                                class="art-intro-avatar rounded-circle me-2">
+                                            <i class="fa-solid fa-arrow-right me-2"></i>
+                                            <p class="squada-one lh-1 mb-0">0.044Eth</p>
+                                        </div>
+                                    </th>
+                                    <td class="border-0 text-dark text-end text-lg-start align-middle pe-0">2週後</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- info -->
+            <div class="col mt-lg-c-n13">
+                <div class="bg-white border">
+                    <a class="btn art-collapse-btn d-flex justify-content-between align-items-center border-bottom text-black p-4 p-lg-6"
+                        href="#art-intro-collapse-info" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="art-intro-collapse-info">
+                        <p class="fw-bold mb-0">基本資訊</p>
+                        <i class="fa-solid fa-angle-up"></i>
+                        <i class="fa-solid fa-angle-down d-none"></i>
+                    </a>
+                    <ul class="collapse show list-group list-group-flush py-6 px-4 p-lg-6 mb-0"
+                        id="art-intro-collapse-info">
+                        <li class="list-group-item d-flex justify-content-between p-0 pb-2 mb-2">
+                            <p class="mb-0">擁有者</p>
+                            <p class="text-dark mb-0">0xa543x…1283</p>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between p-0 pb-2 mb-2">
+                            <p class="mb-0">代幣ID</p>
+                            <p class="text-dark mb-0">#1234</p>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between p-0">
+                            <p class="mb-0">合約地址</p>
+                            <p class="text-dark mb-0">青藍金剛鸚鵡</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- history -->
+            <div class="col">
+                <div class="bg-white border">
+                    <a class="btn art-collapse-btn d-flex justify-content-between align-items-center border-bottom text-black p-4 p-lg-6"
+                        href="#art-intro-collapse-history" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="art-intro-collapse-history">
+                        <p class="fw-bold mb-0">交易歷史</p>
+                        <i class="fa-solid fa-angle-up"></i>
+                        <i class="fa-solid fa-angle-down d-none"></i>
+                    </a>
+                    <div class="collapse show py-6 px-4 p-lg-6" id="art-intro-collapse-history">
+                        <table class="table table-hover mb-0">
+                            <thead class="bg-light">
+                                <tr>
+                                    <th class="border-0 fw-normal ps-4" scope="col">事件</th>
+                                    <th class="border-0 fw-normal" scope="col">價格</th>
+                                    <th class="border-0 fw-normal" scope="col">從</th>
+                                    <th class="border-0 fw-normal" scope="col">時間</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr class="align-middle ">
+                                    <th class="border-light ps-4" scope="row">
+                                        上架
+                                    </th>
+                                    <td class="border-light">2nb</td>
+                                    <td class="border-light">
+                                        <div class="d-flex align-items-center">
+                                            <img src="./assets/images/artist02.jpg" alt="artist02"
+                                                class="art-intro-avatar rounded-circle me-2">
+                                            <p class="squada-one d-none d-lg-block">Antony WU</p>
+                                        </div>
+                                    </td>
+                                    <td class="border-light text-dark">14小時前</td>
+                                </tr>
+
+                                <tr class="align-middle ">
+                                    <th class="border-light ps-4" scope="row">
+                                        出價
+                                    </th>
+                                    <td class="border-light">2nb</td>
+                                    <td class="border-light">
+                                        <div class="d-flex align-items-center">
+                                            <img src="./assets/images/artist01.jpg" alt="artist01"
+                                                class="art-intro-avatar rounded-circle me-2">
+                                            <p class="squada-one d-none d-lg-block">Antony WU</p>
+                                        </div>
+                                    </td>
+                                    <td class="border-light text-dark">2天前</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- other -->
+        <!-- title -->
+        <div class="d-flex border-bottom justify-content-between align-items-end mb-6 mb-lg-12">
+            <div class="d-flex">
+                <h2 class="squada-one fs-2 fs-lg-1 lh-1 mb-2 me-lg-4">Other</h2>
+                <p class="fw-bold align-self-end fs-4 mb-2 d-none d-lg-block">其餘作品</p>
+            </div>
+            <a href="#"
+                class="btn btn-triangle btn-bg-primary fs-5 align-bottom lh-1 btn-border-transparent squada-one py-2 px-12">MORE</a>
+        </div>
+
+        <!-- swiper -->
+        <div class="swiper artIntroSwiper position-relative mb-4 mb-lg-12">
+            <div class="swiper-wrapper">
+                <!-- 1 -->
+                <div class="swiper-slide position-relative">
+                    <div class="card art-intro-swiper-card border-0">
+                        <div class="p-2 p-lg-6">
+                            <div class="art-intro-swiper-img-container">
+                                <img class="art-intro-swiper-img" src="./assets/images/art22.jpg"
+                                    alt="art22">
+                                <!-- hover content -->
+                                <div class="p-4 art-intro-swiper-img-hover-content position-absolute d-none d-lg-block">
+                                    <div
+                                        class="d-flex flex-column justify-content-between border border-white h-100 w-100 p-4">
+                                        <div class="text-white">
+                                            <p class="fw-bold mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                                            <i class="fa-brands fa-ethereum me-2"></i><span
+                                                class="squada-one">300</span>
+                                        </div>
+                                        <div class="d-flex align-self-end">
+                                            <a href="#"
+                                                class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
+                            <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">群聚囉～小鳥</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="swiper-slide position-relative">
+                    <div class="card art-intro-swiper-card border-0">
+                        <div class="p-2 p-lg-6">
+                            <div class="art-intro-swiper-img-container">
+                                <img class="art-intro-swiper-img d-none d-lg-block" src="./assets/images/art22.jpg"
+                                    alt="art22">
+                                <img class="art-intro-swiper-img d-lg-none" src="./assets/images/art20.jpg"
+                                    alt="art20">
+                                <!-- hover content -->
+                                <div class="p-4 art-intro-swiper-img-hover-content position-absolute d-none d-lg-block">
+                                    <div
+                                        class="d-flex flex-column justify-content-between border border-white h-100 w-100 p-4">
+                                        <div class="text-white">
+                                            <p class="fw-bold mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                                            <i class="fa-brands fa-ethereum me-2"></i><span
+                                                class="squada-one">300</span>
+                                        </div>
+                                        <div class="d-flex align-self-end">
+                                            <a href="#"
+                                                class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
+                            <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0 d-none d-lg-block">群聚的小鳥們</h5>
+                            <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0 d-lg-none">這兩隻也太像企鵝了吧</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="swiper-slide position-relative">
+                    <div class="card art-intro-swiper-card border-0">
+                        <div class="p-2 p-lg-6">
+                            <div class="art-intro-swiper-img-container">
+                                <img class="art-intro-swiper-img d-none d-lg-block" src="./assets/images/art27.jpg"
+                                    alt="art27">
+                                <img class="art-intro-swiper-img d-lg-none" src="./assets/images/art22.jpg"
+                                    alt="art22">
+                                <!-- hover content -->
+                                <div class="p-4 art-intro-swiper-img-hover-content position-absolute d-none d-lg-block">
+                                    <div
+                                        class="d-flex flex-column justify-content-between border border-white h-100 w-100 p-4">
+                                        <div class="text-white">
+                                            <p class="fw-bold mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                                            <i class="fa-brands fa-ethereum me-2"></i><span
+                                                class="squada-one">300</span>
+                                        </div>
+                                        <div class="d-flex align-self-end">
+                                            <a href="#"
+                                                class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
+                            <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0 d-none d-lg-block">我真的受傷了</h5>
+                            <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0 d-lg-none">群聚的小鳥們</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="swiper-slide position-relative">
+                    <div class="card art-intro-swiper-card border-0">
+                        <div class="p-2 p-lg-6">
+                            <div class="art-intro-swiper-img-container">
+                                <img class="art-intro-swiper-img" src="./assets/images/art20.jpg"
+                                    alt="art20">
+                                <!-- hover content -->
+                                <div class="p-4 art-intro-swiper-img-hover-content position-absolute d-none d-lg-block">
+                                    <div
+                                        class="d-flex flex-column justify-content-between border border-white h-100 w-100 p-4">
+                                        <div class="text-white">
+                                            <p class="fw-bold mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                                            <i class="fa-brands fa-ethereum me-2"></i><span
+                                                class="squada-one">300</span>
+                                        </div>
+                                        <div class="d-flex align-self-end">
+                                            <a href="#"
+                                                class="btn btn-white btn-triangle squada-one py-2 px-md-6 px-xl-12">MORE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body bg-light p-2 py-lg-4 px-lg-0">
+                            <h5 class="card-title fs-7 fs-lg-6 fw-lg-bold mb-0">這兩隻也太像企鵝了吧</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="swiper-pagination lh-1 justify-content-center d-flex"></div>
+
+    </div>
+</main>
+
+    <footer class="py-6 border-top border-4 position-relative deco-border-footer">
+      <p class="text-center mb-0">© ART NFT. All Rights Reserved</p>
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+      async></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

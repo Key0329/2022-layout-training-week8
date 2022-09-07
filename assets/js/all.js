@@ -18,7 +18,7 @@ $(document).ready(function () {
     $(".navbar-toggler-logo, .navbar-brand-logo, .navbar-previous, .navbar-searchBox").toggleClass("d-none");
   }); // index swiper
 
-  var swiper = new Swiper(".mySwiper", {
+  var mySwiper = new Swiper(".mySwiper", {
     slidesPerView: "auto",
     spaceBetween: 24,
     // loop: true,
@@ -36,9 +36,32 @@ $(document).ready(function () {
   }); // ------------------ arts ------------------
   // collapse arrow
 
-  $(".arts-sidebar-btn").click(function (e) {
+  $(".art-collapse-btn").click(function (e) {
     event.preventDefault();
     $(this).find(".fa-angle-up, .fa-angle-down").toggleClass("d-none");
+  }); // ------------------ arts intro ------------------
+  // arts intro swiper
+
+  var artIntroSwiper = new Swiper(".artIntroSwiper", {
+    slidesPerView: 2,
+    spaceBetween: 24,
+    loop: true,
+    // centeredSlides: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    breakpoints: {
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 24
+      }
+    }
+  }); // ------------------ ranking ------------------
+
+  $(".art-ranking-triangle").click(function (e) {
+    event.preventDefault();
+    $(this).toggleClass("show");
   });
 });
 //# sourceMappingURL=all.js.map

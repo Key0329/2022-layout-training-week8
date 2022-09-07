@@ -33,3 +33,41 @@
     line-height: 1;
 }
 
+// wallet mobile button
+.wallet{
+    &-modal-btn-close{
+        right: 12px;
+        top: 24px;
+    }
+    &-img{
+        width: 16px;
+        height: 16px;
+    }
+    
+}
+
+// check
+.hover-check-primary{
+    &:hover{
+        & .fa-check{
+            display: block !important;
+            top: 18px;
+            right: 16px;
+            z-index: 2;
+        }
+    }
+    &:focus{
+        & .fa-check{
+            display: block !important;
+            top: 18px;
+            right: 16px;
+            z-index: 1;
+        }
+    }
+}
+
+.focus-border-primary{
+    &:focus{
+        border-color: $primary !important;
+    }
+}

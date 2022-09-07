@@ -5,3 +5,17 @@
     }
 }
 
+// background
+.hover-bg-secondary{
+    &:hover{
+        background-color: $secondary;
+    }
+}
+
+// border
+.hover-border-primary{
+    &:hover{
+        border-color: $primary !important;
+    }
+}
+

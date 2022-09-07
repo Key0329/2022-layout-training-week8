@@ -64,6 +64,13 @@ $(document).ready(function () {
   $(".art-ranking-triangle").click(function (e) {
     event.preventDefault();
     $(this).toggleClass("show");
+  }); // init Masonry
+
+  var $grid = $('.grid').masonry({// options...
+  }); // layout Masonry after each image loads
+
+  $grid.imagesLoaded().progress(function () {
+    $grid.masonry('layout');
   });
 });
 //# sourceMappingURL=all.js.map
